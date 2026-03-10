@@ -79,8 +79,11 @@ document.addEventListener('DOMContentLoaded', function () {
   fetch('data/clients.json')
     .then(function (r) { return r.json(); })
     .then(function (d) {
+      var wrap = document.querySelector('.marquee-wrap');
       var track = document.getElementById('mTrack');
-      if (!track) return;
+      if (!track || !wrap) return;
+
+      // Build items in original track
       track.innerHTML = '';
       d.clients.forEach(function (c) {
         var box = document.createElement('div');
@@ -90,10 +93,15 @@ document.addEventListener('DOMContentLoaded', function () {
         box.textContent = lang === 'ar' ? c.name_ar : c.name_en;
         track.appendChild(box);
       });
-      // Clone track for seamless loop
+
+      // Remove any existing clone then add fresh one
+      var existing = wrap.querySelector('[aria-hidden="true"]');
+      if (existing) existing.remove();
       var clone = track.cloneNode(true);
+      clone.removeAttribute('id');
       clone.setAttribute('aria-hidden', 'true');
-      track.parentNode.appendChild(clone);
+      wrap.appendChild(clone);
+
       applyLang(lang);
     })
     .catch(function () {});
