@@ -115,7 +115,22 @@ footer{background:#0A1520;padding:56px 5% 28px;}
    CARD MICRO-ANIMATIONS
 ══════════════════════════════════════ */
 
-.team-card, .client-card, .prod-card, .story-card,
+/* ── Client cards — orange border + lift + scale ── */
+.client-card {
+  transition: all .3s cubic-bezier(.34,1.56,.64,1);
+}
+.client-card:hover {
+  border-color: var(--orange);
+  background: white;
+  box-shadow: 0 12px 40px rgba(11,61,107,.14);
+  transform: translateY(-6px) scale(1.02);
+}
+.client-card:hover .client-logo-bg {
+  transform: scale(1.08);
+}
+
+/* ── All other cards — gradient border mask + inner glow ── */
+.team-card, .prod-card, .story-card,
 .culture-card, .industry-card, .mv-card, .val-card,
 .partner-card, .q-card, .table-card, .hero-card {
   transition: all .3s cubic-bezier(.34,1.56,.64,1);
@@ -124,8 +139,8 @@ footer{background:#0A1520;padding:56px 5% 28px;}
 }
 
 /* Inner background tint */
-.team-card::before, .client-card::before, .prod-card::before,
-.story-card::before, .culture-card::before, .industry-card::before,
+.team-card::before, .prod-card::before, .story-card::before,
+.culture-card::before, .industry-card::before,
 .val-card::before, .q-card::before {
   content: '';
   position: absolute;
@@ -138,8 +153,8 @@ footer{background:#0A1520;padding:56px 5% 28px;}
 }
 
 /* Gradient border */
-.team-card::after, .client-card::after, .prod-card::after,
-.story-card::after, .culture-card::after, .industry-card::after,
+.team-card::after, .prod-card::after, .story-card::after,
+.culture-card::after, .industry-card::after,
 .val-card::after, .q-card::after {
   content: '';
   position: absolute;
@@ -156,19 +171,19 @@ footer{background:#0A1520;padding:56px 5% 28px;}
 }
 
 /* Hover */
-.team-card:hover, .client-card:hover, .prod-card:hover,
-.story-card:hover, .culture-card:hover, .industry-card:hover,
+.team-card:hover, .prod-card:hover, .story-card:hover,
+.culture-card:hover, .industry-card:hover,
 .val-card:hover, .q-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 48px rgba(11,61,107,.16);
 }
 
-.team-card:hover::before, .client-card:hover::before, .prod-card:hover::before,
-.story-card:hover::before, .culture-card:hover::before, .industry-card:hover::before,
+.team-card:hover::before, .prod-card:hover::before, .story-card:hover::before,
+.culture-card:hover::before, .industry-card:hover::before,
 .val-card:hover::before, .q-card:hover::before { opacity: 1; }
 
-.team-card:hover::after, .client-card:hover::after, .prod-card:hover::after,
-.story-card:hover::after, .culture-card:hover::after, .industry-card:hover::after,
+.team-card:hover::after, .prod-card:hover::after, .story-card:hover::after,
+.culture-card:hover::after, .industry-card:hover::after,
 .val-card:hover::after, .q-card:hover::after { opacity: 1; }
 
 /* Icon lift */
