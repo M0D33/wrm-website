@@ -46,12 +46,24 @@ function initReveal() {
   });
 }
 
+/* ── Inject scroll-to-top button ─────────────── */
+(function () {
+  var btn = document.createElement('button');
+  btn.id = 'scrollTopBtn';
+  btn.setAttribute('aria-label', 'Scroll to top');
+  btn.innerHTML = '<svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>';
+  btn.onclick = function () { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+  document.body.appendChild(btn);
+})();
+
 /* ── Nav & UI ─────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function () {
-  // Scroll shadow on nav
+  // Scroll shadow on nav + scroll-to-top button visibility
   window.addEventListener('scroll', function () {
     var nav = document.getElementById('navbar');
     if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
+    var btn = document.getElementById('scrollTopBtn');
+    if (btn) btn.classList.toggle('visible', window.scrollY > 400);
   });
 
   // Hamburger
