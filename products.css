@@ -104,3 +104,8 @@
   .comparison-table th,.comparison-table td{font-size:11px;padding:6px 8px;}
   .prod-header-grid{grid-template-columns:1fr;}
 }
+/* HERO PILLS */
+.hero-pills{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:8px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.85);text-decoration:none;transition:all .2s;}
+.hero-pill:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.4);color:white;}
+.pill-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
