@@ -1,0 +1,39 @@
+/* ==============================================
+   clients.css — Clients page only
+   ============================================== */
+
+/* CLIENTS GRID */
+#clients-grid{background:white;}
+.filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px;}
+.filter-btn{background:var(--off-white);border:1.5px solid var(--border);border-radius:100px;padding:8px 18px;font-size:12.5px;font-weight:600;color:var(--text-mid);cursor:pointer;transition:all .2s;font-family:var(--font-body);}
+.filter-btn:hover,.filter-btn.active{background:var(--blue);border-color:var(--blue);color:white;}
+.clients-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.client-card{background:var(--off-white);border:1px solid var(--border);border-radius:16px;padding:28px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;transition:all .25s;text-align:center;}
+.client-card:hover{border-color:var(--orange);background:white;box-shadow:var(--shadow-md);transform:translateY(-3px);}
+.client-logo-wrap{width:80px;height:50px;display:flex;align-items:center;justify-content:center;}
+.client-logo-wrap img{max-width:80px;max-height:50px;object-fit:contain;filter:grayscale(1);opacity:.6;transition:all .25s;}
+.client-card:hover .client-logo-wrap img{filter:grayscale(0);opacity:1;}
+.client-logo-placeholder{font-size:28px;}
+.client-name{font-size:13.5px;font-weight:700;color:var(--blue);}
+.client-sector-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:4px;background:var(--orange-glow);color:var(--orange);}
+
+/* INDUSTRIES */
+#industries{background:var(--off-white);}
+.industries-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px;}
+.industry-card{background:white;border-radius:18px;padding:30px 26px;border:1px solid var(--border);transition:all .3s;position:relative;overflow:hidden;}
+.industry-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--blue-light));}
+.industry-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);border-color:var(--orange);}
+.industry-card:hover::before{background:linear-gradient(90deg,var(--orange),var(--orange-light));}
+.ind-icon{font-size:36px;margin-bottom:16px;}
+.ind-name{font-family:var(--font-display);font-size:19px;color:var(--blue);margin-bottom:10px;}
+.ind-desc{font-size:13.5px;color:var(--text-mid);line-height:1.7;margin-bottom:14px;}
+.ind-products{display:flex;flex-wrap:wrap;gap:6px;}
+.ind-pill{background:var(--orange-glow);color:var(--orange);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:3px 9px;border-radius:4px;}
+
+
+@media(max-width:480px){
+  .clients-grid{grid-template-columns:1fr 1fr;}
+  .filter-bar{gap:6px;}
+  .filter-btn{font-size:11px;padding:6px 12px;}
+  .industries-grid{grid-template-columns:1fr;}
+}
