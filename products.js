@@ -4,25 +4,56 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  var tabs   = document.querySelectorAll('.tab-btn');
-  var panels = document.querySelectorAll('.tab-panel');
+  var tabs     = document.querySelectorAll('.p-tab');
+  var sections = document.querySelectorAll('.prod-section');
 
-  function activateTab(id) {
-    tabs.forEach(function (t) {
-      t.classList.toggle('active', t.getAttribute('data-tab') === id);
+  if (!tabs.length || !sections.length) return;
+
+  /* ── Highlight active tab on scroll ────────── */
+  var NAV_OFFSET = 72 + 56; // navbar + sticky tab bar height
+
+  function getActiveSection() {
+    var scrollY = window.scrollY + NAV_OFFSET + 20;
+    var active  = sections[0];
+    sections.forEach(function (sec) {
+      if (sec.offsetTop <= scrollY) active = sec;
     });
-    panels.forEach(function (p) {
-      p.classList.toggle('active', p.id === id);
+    return active ? active.id : null;
+  }
+
+  function updateTabs() {
+    var activeId = getActiveSection();
+    tabs.forEach(function (tab) {
+      var href = tab.getAttribute('href').replace('#', '');
+      tab.classList.toggle('active', href === activeId);
     });
   }
 
+  window.addEventListener('scroll', updateTabs, { passive: true });
+  updateTabs();
+
+  /* ── Smooth scroll with offset compensation ── */
   tabs.forEach(function (tab) {
-    tab.addEventListener('click', function () {
-      activateTab(tab.getAttribute('data-tab'));
+    tab.addEventListener('click', function (e) {
+      e.preventDefault();
+      var targetId = tab.getAttribute('href').replace('#', '');
+      var target   = document.getElementById(targetId);
+      if (!target) return;
+      var top = target.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+      window.scrollTo({ top: top, behavior: 'smooth' });
     });
   });
 
-  // Activate first tab on load
-  if (tabs.length) activateTab(tabs[0].getAttribute('data-tab'));
+  /* ── Hero pills smooth scroll ─────────────── */
+  document.querySelectorAll('.hero-pill').forEach(function (pill) {
+    pill.addEventListener('click', function (e) {
+      e.preventDefault();
+      var targetId = pill.getAttribute('href').replace('#', '');
+      var target   = document.getElementById(targetId);
+      if (!target) return;
+      var top = target.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  });
 
 });
