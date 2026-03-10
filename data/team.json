@@ -1,0 +1,44 @@
+{
+  "team": [
+    {
+      "id": "general-manager",
+      "name_en": "[General Manager Full Name]",
+      "name_ar": "[الاسم الكامل]",
+      "role_en": "General Manager",
+      "role_ar": "المدير العام",
+      "bio_en": "Placeholder — replace with the General Manager's background, years of experience, and vision for WRM.",
+      "bio_ar": "نص مؤقت — استبدل بخلفية المدير العام وسنوات خبرته ورؤيته لـ WRM.",
+      "photo": "assets/team/general-manager.jpg"
+    },
+    {
+      "id": "finance-director",
+      "name_en": "[Finance Director Full Name]",
+      "name_ar": "[الاسم الكامل]",
+      "role_en": "Finance Director",
+      "role_ar": "المدير المالي",
+      "bio_en": "Placeholder — replace with the Finance Director's background, qualifications, and key achievements at WRM.",
+      "bio_ar": "نص مؤقت — استبدل بخلفية المدير المالي ومؤهلاته وإنجازاته الرئيسية في WRM.",
+      "photo": "assets/team/finance-director.jpg"
+    },
+    {
+      "id": "commercial-director",
+      "name_en": "[Commercial Director Full Name]",
+      "name_ar": "[الاسم الكامل]",
+      "role_en": "Commercial Director",
+      "role_ar": "المدير التجاري",
+      "bio_en": "Placeholder — replace with the Commercial Director's background, industry relationships, and business development experience.",
+      "bio_ar": "نص مؤقت — استبدل بخلفية المدير التجاري وعلاقاته الصناعية وخبرته في تطوير الأعمال.",
+      "photo": "assets/team/commercial-director.jpg"
+    },
+    {
+      "id": "logistics-qhse-manager",
+      "name_en": "[Logistics & QHSE Manager Full Name]",
+      "name_ar": "[الاسم الكامل]",
+      "role_en": "Logistics & QHSE Manager",
+      "role_ar": "مدير اللوجستيات والجودة والصحة والسلامة والبيئة",
+      "bio_en": "Placeholder — replace with the Logistics & QHSE Manager's background, certifications, and operational achievements.",
+      "bio_ar": "نص مؤقت — استبدل بخلفية مدير اللوجستيات والجودة وشهاداته وإنجازاته التشغيلية.",
+      "photo": "assets/team/logistics-qhse-manager.jpg"
+    }
+  ]
+}

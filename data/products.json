@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "id": "silica-sand",
+      "name_en": "Silica Sand",
+      "name_ar": "رمل السيليكا",
+      "tagline_en": "High-Purity Industrial Silica Sand",
+      "tagline_ar": "رمل السيليكا الصناعي عالي النقاء",
+      "description_en": "Our silica sand is extracted and processed from premium deposits in Tayma, Saudi Arabia. With consistently high SiO₂ content and tightly controlled particle size distribution, it meets the demands of glass manufacturing, construction, water treatment, and foundry applications.",
+      "description_ar": "يُستخرج رمل السيليكا لدينا ويُعالَج من رواسب متميزة في تيماء، المملكة العربية السعودية. بمحتوى SiO₂ مرتفع باستمرار وتوزيع حجم جسيمات محكوم بدقة، يلبي متطلبات تصنيع الزجاج والبناء ومعالجة المياه وتطبيقات المسابك.",
+      "chemical_analysis": [
+        { "compound": "SiO₂",  "value": "TBC", "unit": "%" },
+        { "compound": "Al₂O₃", "value": "TBC", "unit": "%" },
+        { "compound": "Fe₂O₃", "value": "TBC", "unit": "%" },
+        { "compound": "TiO₂",  "value": "TBC", "unit": "%" },
+        { "compound": "CaO",   "value": "TBC", "unit": "%" },
+        { "compound": "MgO",   "value": "TBC", "unit": "%" },
+        { "compound": "Na₂O",  "value": "TBC", "unit": "%" },
+        { "compound": "K₂O",   "value": "TBC", "unit": "%" },
+        { "compound": "LOI",   "value": "TBC", "unit": "%" }
+      ],
+      "physical_properties": [
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" },
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" },
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" },
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" }
+      ],
+      "applications_en": ["Glass Manufacturing", "Construction", "Water Treatment", "Foundry & Casting"],
+      "applications_ar": ["تصنيع الزجاج", "البناء", "معالجة المياه", "المسابك والصب"]
+    },
+    {
+      "id": "silica-flour",
+      "name_en": "Silica Flour",
+      "name_ar": "دقيق السيليكا",
+      "tagline_en": "Ultra-Fine Milled Silica Powder",
+      "tagline_ar": "مسحوق السيليكا المطحون فائق النعومة",
+      "description_en": "Produced by milling high-purity silica sand to a fine powder, our silica flour offers exceptional chemical inertness and thermal stability. Used in ceramics, oil well cementing, paints, and specialty coatings requiring consistent fineness and purity.",
+      "description_ar": "يُنتج عن طريق طحن رمل السيليكا عالي النقاء إلى مسحوق ناعم، ويتميز دقيق السيليكا لدينا بخمول كيميائي استثنائي واستقرار حراري. يُستخدم في السيراميك وتسمنت آبار النفط والدهانات والطلاءات المتخصصة التي تتطلب نعومة ونقاءً متسقين.",
+      "chemical_analysis": [
+        { "compound": "SiO₂",  "value": "TBC", "unit": "%" },
+        { "compound": "Al₂O₃", "value": "TBC", "unit": "%" },
+        { "compound": "Fe₂O₃", "value": "TBC", "unit": "%" },
+        { "compound": "TiO₂",  "value": "TBC", "unit": "%" },
+        { "compound": "CaO",   "value": "TBC", "unit": "%" },
+        { "compound": "MgO",   "value": "TBC", "unit": "%" },
+        { "compound": "Na₂O",  "value": "TBC", "unit": "%" },
+        { "compound": "K₂O",   "value": "TBC", "unit": "%" },
+        { "compound": "LOI",   "value": "TBC", "unit": "%" }
+      ],
+      "physical_properties": [
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" },
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" },
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" },
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" }
+      ],
+      "applications_en": ["Ceramics & Tiles", "Oil Well Cementing", "Paints & Coatings", "Specialty Construction"],
+      "applications_ar": ["السيراميك والبلاط", "تسمنت آبار النفط", "الدهانات والطلاءات", "البناء المتخصص"]
+    },
+    {
+      "id": "frac-sand",
+      "name_en": "Frac Sand",
+      "name_ar": "رمل الفراك",
+      "tagline_en": "API-Tested Hydraulic Fracturing Proppant",
+      "tagline_ar": "دعامة الكسر الهيدروليكي المختبرة وفق معايير API",
+      "description_en": "Our frac sand is rigorously tested to API/ISO 13503-2 standards for use in hydraulic fracturing operations. Engineered for high roundness, sphericity, and crush resistance to maintain fracture conductivity under high closure stress conditions in oilfield applications.",
+      "description_ar": "يخضع رمل الفراك لدينا لاختبارات صارمة وفق معايير API/ISO 13503-2 للاستخدام في عمليات الكسر الهيدروليكي. مُهندس لتحقيق استدارة وكروية ومقاومة سحق عالية للحفاظ على توصيل الشقوق في ظل ظروف إجهاد إغلاق عالية في تطبيقات حقول النفط.",
+      "chemical_analysis": [
+        { "compound": "SiO₂",  "value": "TBC", "unit": "%" },
+        { "compound": "Al₂O₃", "value": "TBC", "unit": "%" },
+        { "compound": "Fe₂O₃", "value": "TBC", "unit": "%" },
+        { "compound": "TiO₂",  "value": "TBC", "unit": "%" },
+        { "compound": "CaO",   "value": "TBC", "unit": "%" },
+        { "compound": "MgO",   "value": "TBC", "unit": "%" },
+        { "compound": "Na₂O",  "value": "TBC", "unit": "%" },
+        { "compound": "K₂O",   "value": "TBC", "unit": "%" },
+        { "compound": "LOI",   "value": "TBC", "unit": "%" }
+      ],
+      "physical_properties": [
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" },
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" },
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" },
+        { "mesh": "TBC", "micron": "TBC", "retained": "TBC" }
+      ],
+      "api_properties": [
+        { "property_en": "Roundness",         "property_ar": "الاستدارة",              "value": "TBC", "standard": "API/ISO 13503-2" },
+        { "property_en": "Sphericity",        "property_ar": "الكروية",               "value": "TBC", "standard": "API/ISO 13503-2" },
+        { "property_en": "Crush Resistance",  "property_ar": "مقاومة السحق",          "value": "TBC", "standard": "API/ISO 13503-2" },
+        { "property_en": "Turbidity",         "property_ar": "العكارة",               "value": "TBC", "standard": "API/ISO 13503-2" },
+        { "property_en": "Acid Solubility",   "property_ar": "الذوبانية الحمضية",     "value": "TBC", "standard": "API/ISO 13503-2" }
+      ],
+      "applications_en": ["Hydraulic Fracturing", "Oilfield Cementing", "Gravel Packing"],
+      "applications_ar": ["الكسر الهيدروليكي", "تسمنت آبار النفط", "حزم الحصى"]
+    }
+  ]
+}

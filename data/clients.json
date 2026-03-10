@@ -1,0 +1,84 @@
+{
+  "clients": [
+    {
+      "id": "halliburton",
+      "name_en": "Halliburton",
+      "name_ar": "هاليبرتون",
+      "sector": "oil",
+      "sector_en": "Oil & Gas",
+      "sector_ar": "النفط والغاز",
+      "products": ["frac-sand", "silica-flour"],
+      "logo": "assets/clients/halliburton.png"
+    },
+    {
+      "id": "nesr",
+      "name_en": "NESR",
+      "name_ar": "NESR",
+      "sector": "oil",
+      "sector_en": "Oil & Gas",
+      "sector_ar": "النفط والغاز",
+      "products": ["frac-sand", "silica-flour"],
+      "logo": "assets/clients/nesr.png"
+    },
+    {
+      "id": "sagco",
+      "name_en": "Sagco",
+      "name_ar": "ساجكو",
+      "sector": "construction",
+      "sector_en": "Construction",
+      "sector_ar": "البناء",
+      "products": ["silica-sand"],
+      "logo": "assets/clients/sagco.png"
+    },
+    {
+      "id": "obeikan-glass",
+      "name_en": "Obeikan Glass Company",
+      "name_ar": "شركة عبيكان للزجاج",
+      "sector": "glass",
+      "sector_en": "Glass",
+      "sector_ar": "الزجاج",
+      "products": ["silica-sand"],
+      "logo": "assets/clients/obeikan-glass.png"
+    },
+    {
+      "id": "arabian-united-float-glass",
+      "name_en": "Arabian United Float Glass",
+      "name_ar": "الزجاج العائم العربي المتحد",
+      "sector": "glass",
+      "sector_en": "Glass",
+      "sector_ar": "الزجاج",
+      "products": ["silica-sand"],
+      "logo": "assets/clients/arabian-united-float-glass.png"
+    },
+    {
+      "id": "nesma",
+      "name_en": "Nesma",
+      "name_ar": "نسمة",
+      "sector": "construction",
+      "sector_en": "Construction",
+      "sector_ar": "البناء",
+      "products": ["silica-sand"],
+      "logo": "assets/clients/nesma.png"
+    },
+    {
+      "id": "sika",
+      "name_en": "Sika",
+      "name_ar": "سيكا",
+      "sector": "construction",
+      "sector_en": "Construction",
+      "sector_ar": "البناء",
+      "products": ["silica-sand", "silica-flour"],
+      "logo": "assets/clients/sika.png"
+    },
+    {
+      "id": "saint-gobain",
+      "name_en": "Saint-Gobain",
+      "name_ar": "سان غوبان",
+      "sector": "glass",
+      "sector_en": "Glass",
+      "sector_ar": "الزجاج",
+      "products": ["silica-sand"],
+      "logo": "assets/clients/saint-gobain.png"
+    }
+  ]
+}
