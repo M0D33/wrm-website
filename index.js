@@ -75,13 +75,27 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .catch(function () {}); // fail silently on homepage
 
-  /* ── Marquee clone ──────────────────────────── */
-  var track = document.querySelector('.marquee-track');
-  if (track && !track.dataset.cloned) {
-    var clone = track.cloneNode(true);
-    clone.setAttribute('aria-hidden', 'true');
-    track.parentNode.appendChild(clone);
-    track.dataset.cloned = '1';
-  }
+  /* ── Marquee — load from clients.json ──────── */
+  fetch('data/clients.json')
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      var track = document.getElementById('mTrack');
+      if (!track) return;
+      track.innerHTML = '';
+      d.clients.forEach(function (c) {
+        var box = document.createElement('div');
+        box.className = 'client-box';
+        box.setAttribute('data-en', c.name_en);
+        box.setAttribute('data-ar', c.name_ar);
+        box.textContent = lang === 'ar' ? c.name_ar : c.name_en;
+        track.appendChild(box);
+      });
+      // Clone track for seamless loop
+      var clone = track.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.parentNode.appendChild(clone);
+      applyLang(lang);
+    })
+    .catch(function () {});
 
 });
