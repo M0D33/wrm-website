@@ -50,12 +50,14 @@ nav.scrolled{box-shadow:var(--shadow-md);}
 
 /* COMMON (eyebrow, section-title, divider, buttons) */
 /* COMMON */
-section{padding:88px 5%;}
+section{padding:100px 5%;}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:var(--orange);margin-bottom:14px;}
 .eyebrow::before{content:'';width:22px;height:2px;background:var(--orange);}
 [dir="rtl"] .eyebrow::before{display:none;}
 [dir="rtl"] .eyebrow::after{content:'';width:22px;height:2px;background:var(--orange);}
+.section-hd{margin-bottom:52px;}
 .section-title{font-family:var(--font-display);font-size:clamp(28px,3.8vw,44px);color:var(--blue);line-height:1.12;margin-bottom:16px;}
+.section-sub{font-size:15.5px;color:var(--text-mid);line-height:1.75;margin-top:12px;}
 .divider{height:1px;background:var(--border);}
 .btn-solid{background:var(--orange);color:white;border:none;border-radius:8px;padding:13px 28px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .25s;font-family:var(--font-body);}
 .btn-solid:hover{background:var(--orange-light);transform:translateY(-1px);box-shadow:0 6px 20px rgba(232,97,10,.35);}
