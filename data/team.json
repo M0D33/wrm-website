@@ -2,7 +2,7 @@
   "team": [
     {
       "id": "general-manager",
-      "name_en": "[General Manager Full Name]",
+      "name_en": "[Yasser Abdul Fattah]",
       "name_ar": "[الاسم الكامل]",
       "role_en": "General Manager",
       "role_ar": "المدير العام",
@@ -12,7 +12,7 @@
     },
     {
       "id": "finance-director",
-      "name_en": "[Finance Director Full Name]",
+      "name_en": "[Mohammed Baghdady]",
       "name_ar": "[الاسم الكامل]",
       "role_en": "Finance Director",
       "role_ar": "المدير المالي",
@@ -22,7 +22,7 @@
     },
     {
       "id": "commercial-director",
-      "name_en": "[Commercial Director Full Name]",
+      "name_en": "[Mahdi Al Dawood]",
       "name_ar": "[الاسم الكامل]",
       "role_en": "Commercial Director",
       "role_ar": "المدير التجاري",
@@ -32,7 +32,7 @@
     },
     {
       "id": "logistics-qhse-manager",
-      "name_en": "[Logistics & QHSE Manager Full Name]",
+      "name_en": "[Abdullah Al Qahtani]",
       "name_ar": "[الاسم الكامل]",
       "role_en": "Logistics & QHSE Manager",
       "role_ar": "مدير اللوجستيات والجودة والصحة والسلامة والبيئة",
