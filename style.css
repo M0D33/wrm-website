@@ -113,19 +113,17 @@ footer{background:#0A1520;padding:56px 5% 28px;}
 
 /* ══════════════════════════════════════
    CARD MICRO-ANIMATIONS
-   Lift + inner glow + gradient border
 ══════════════════════════════════════ */
 
-/* Base — all card types */
 .team-card, .client-card, .prod-card, .story-card,
 .culture-card, .industry-card, .mv-card, .val-card,
 .partner-card, .q-card, .table-card, .hero-card {
-  transition: transform .35s cubic-bezier(.34,1.56,.64,1), box-shadow .35s ease;
+  transition: all .3s cubic-bezier(.34,1.56,.64,1);
   position: relative;
   overflow: hidden;
 }
 
-/* ::before — inner warm glow that fades in */
+/* Inner background tint */
 .team-card::before, .client-card::before, .prod-card::before,
 .story-card::before, .culture-card::before, .industry-card::before,
 .val-card::before, .q-card::before {
@@ -133,70 +131,54 @@ footer{background:#0A1520;padding:56px 5% 28px;}
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(135deg, rgba(232,97,10,.05), rgba(34,114,195,.05));
+  background: linear-gradient(135deg, rgba(232,97,10,.04), rgba(34,114,195,.04));
   opacity: 0;
-  transition: opacity .35s ease;
+  transition: opacity .3s;
   pointer-events: none;
-  z-index: 0;
 }
 
-/* ::after — animated gradient border using mask technique */
+/* Gradient border */
 .team-card::after, .client-card::after, .prod-card::after,
 .story-card::after, .culture-card::after, .industry-card::after,
 .val-card::after, .q-card::after {
   content: '';
   position: absolute;
-  inset: -1.5px;
+  inset: -1px;
   border-radius: inherit;
-  background: linear-gradient(135deg, var(--orange), var(--blue-light), var(--orange));
-  background-size: 200% 200%;
-  -webkit-mask:
-    linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(#fff 0 0);
+  border: 1.5px solid transparent;
+  background: linear-gradient(135deg, var(--orange), var(--blue-light)) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   opacity: 0;
-  transition: opacity .35s ease;
-  animation: borderShift 3s linear infinite paused;
+  transition: opacity .3s;
   pointer-events: none;
-  z-index: 0;
 }
 
-@keyframes borderShift {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Hover state */
+/* Hover */
 .team-card:hover, .client-card:hover, .prod-card:hover,
 .story-card:hover, .culture-card:hover, .industry-card:hover,
 .val-card:hover, .q-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 24px 52px rgba(11,61,107,.14), 0 4px 16px rgba(232,97,10,.07);
+  box-shadow: 0 20px 48px rgba(11,61,107,.16);
 }
 
 .team-card:hover::before, .client-card:hover::before, .prod-card:hover::before,
 .story-card:hover::before, .culture-card:hover::before, .industry-card:hover::before,
-.val-card:hover::before, .q-card:hover::before {
-  opacity: 1;
-}
+.val-card:hover::before, .q-card:hover::before { opacity: 1; }
 
 .team-card:hover::after, .client-card:hover::after, .prod-card:hover::after,
 .story-card:hover::after, .culture-card:hover::after, .industry-card:hover::after,
-.val-card:hover::after, .q-card:hover::after {
-  opacity: 1;
-  animation-play-state: running;
-}
+.val-card:hover::after, .q-card:hover::after { opacity: 1; }
 
-/* Icon lift on hover */
+/* Icon lift */
 .team-card:hover .team-photo,
 .prod-card:hover .prod-icon,
 .culture-card:hover .culture-icon,
 .val-card:hover .val-icon,
 .industry-card:hover .ind-icon {
   transform: scale(1.06) rotate(-3deg);
-  transition: transform .35s cubic-bezier(.34,1.56,.64,1);
+  transition: transform .3s cubic-bezier(.34,1.56,.64,1);
 }
 
 /* ══════════════════════════════════════
