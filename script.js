@@ -71,9 +71,26 @@ document.addEventListener('DOMContentLoaded', function () {
   var mobileMenu = document.getElementById('mobileMenu');
   if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', function () {
+      hamburger.classList.toggle('open');
       mobileMenu.classList.toggle('open');
     });
+    // Close menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
   }
+
+  // Mark active page in both nav and mobile menu
+  var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(function(a) {
+    var href = a.getAttribute('href').split('?')[0];
+    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+      a.classList.add('active');
+    }
+  });
 
   // Lang toggle
   var toggle = document.getElementById('langToggle');
