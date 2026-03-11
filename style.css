@@ -28,13 +28,14 @@ nav.scrolled{box-shadow:var(--shadow-md);}
 .btn-nav{background:var(--orange);color:white;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;transition:all .25s;font-family:var(--font-body);white-space:nowrap;}
 .btn-nav:hover{background:var(--orange-light);transform:translateY(-1px);box-shadow:0 4px 16px rgba(232,97,10,.35);}
 /* ── Hamburger ── */
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
-.hamburger span{display:block;width:24px;height:2px;background:var(--blue);border-radius:2px;
-  transition:transform .35s cubic-bezier(.34,1.56,.64,1), opacity .25s ease, width .3s ease;}
+.hamburger{display:none;flex-direction:column;cursor:pointer;background:none;border:none;padding:6px 4px;gap:0;}
+.hamburger span{display:block;width:24px;height:2px;background:var(--blue);border-radius:2px;margin-bottom:5px;
+  transition:transform .35s cubic-bezier(.34,1.56,.64,1), opacity .2s ease, margin .35s ease;}
+.hamburger span:last-child{margin-bottom:0;}
 
 /* X animation when open */
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
-.hamburger.open span:nth-child(2){opacity:0;width:0;}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
 /* ── Mobile menu ── */
