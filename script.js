@@ -3,6 +3,35 @@
    script.js
    ============================================== */
 
+/* ── Page Loader ──────────────────────────────
+   Injected by JS so it only needs to live here.
+   ─────────────────────────────────────────── */
+(function () {
+  var loader = document.createElement('div');
+  loader.id = 'loader';
+  loader.innerHTML =
+    '<div class="l-bg"></div>' +
+    '<div class="l-grid"></div>' +
+    '<div class="l-logo-wrap" id="loaderLogo">' +
+      '<img src="assets/logo-nav.png" class="l-logo-img" width="200" height="59" alt="White Rocks Mining"/>' +
+    '</div>';
+  document.body.insertBefore(loader, document.body.firstChild);
+
+  // Start breathing after logo appears
+  setTimeout(function () {
+    var w = document.getElementById('loaderLogo');
+    if (w) w.classList.add('breathing');
+  }, 700);
+
+  // Dismiss
+  setTimeout(function () {
+    loader.classList.add('exit');
+    loader.addEventListener('animationend', function () {
+      loader.style.display = 'none';
+    }, { once: true });
+  }, 1600);
+})();
+
 var lang = new URLSearchParams(window.location.search).get('lang')
          || localStorage.getItem('wrm_lang')
          || 'en';

@@ -285,3 +285,55 @@ footer{background:#0A1520;padding:56px 5% 28px;}
 @media(max-width:640px){
   #scrollTopBtn { bottom:20px; right:20px; width:42px; height:42px; }
 }
+
+/* ══════════════════════════════
+   PAGE LOADER
+══════════════════════════════ */
+#loader{
+  position:fixed;inset:0;z-index:9000;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.l-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(18,60,110,.7) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 10%, rgba(11,40,80,.5) 0%, transparent 45%),
+    linear-gradient(160deg, #050f1e 0%, #071525 50%, #030c18 100%);
+}
+.l-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);
+  background-size:80px 80px;
+  mask-image:radial-gradient(ellipse at center, black 20%, transparent 75%);
+  -webkit-mask-image:radial-gradient(ellipse at center, black 20%, transparent 75%);
+}
+.l-logo-wrap{
+  position:relative;z-index:2;
+  opacity:0;
+  animation:loaderLogoIn .65s cubic-bezier(.34,1.1,.64,1) .2s both;
+}
+.l-logo-wrap.breathing{
+  animation:loaderLogoIn .65s cubic-bezier(.34,1.1,.64,1) .2s both,
+            loaderBreathe 2s ease-in-out .9s infinite;
+}
+.l-logo-img{
+  filter:drop-shadow(0 0 40px rgba(232,97,10,.3)) drop-shadow(0 0 100px rgba(232,97,10,.08));
+  display:block;
+}
+#loader.exit{animation:loaderExit .5s cubic-bezier(.76,0,.24,1) both;}
+
+@keyframes loaderLogoIn{
+  from{opacity:0;transform:scale(.82);}
+  to{opacity:1;transform:scale(1);}
+}
+@keyframes loaderBreathe{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.04);}
+}
+@keyframes loaderExit{
+  0%{opacity:1;transform:scale(1);}
+  100%{opacity:0;transform:scale(1.06);}
+}
