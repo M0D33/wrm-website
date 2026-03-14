@@ -161,11 +161,11 @@ function applyLang(l) {
   document.querySelectorAll('a[href]').forEach(function (a) {
     try {
       var raw = a.getAttribute('href');
-      if (!raw || raw.startsWith('mailto') || raw.startsWith('tel') || raw.startsWith('#')) return;
-      var u = new URL(raw, window.location.href);
-      if (u.origin === window.location.origin) {
-        a.href = u.pathname + '?lang=' + l + (u.hash || '');
-      }
+      if (!raw || raw.startsWith('mailto') || raw.startsWith('tel') || raw.startsWith('#') || raw.startsWith('http')) return;
+      // Keep relative links relative, just add/update lang param
+      var base = raw.split('?')[0];
+      var hash = (raw.indexOf('#') > -1) ? raw.substring(raw.indexOf('#')) : '';
+      a.href = base + '?lang=' + l + hash;
     } catch (e) {}
   });
 }
@@ -175,10 +175,17 @@ function initReveal() {
   var obs = new IntersectionObserver(function (entries) {
     entries.forEach(function (e, i) {
       if (e.isIntersecting) {
-        setTimeout(function () { e.target.classList.add('visible'); }, i * 80);
+        setTimeout(function () {
+          e.target.classList.add('visible');
+          // Release will-change after animation to free GPU memory
+          setTimeout(function () {
+            e.target.style.willChange = 'auto';
+          }, 700);
+          obs.unobserve(e.target);
+        }, i * 80);
       }
     });
-  }, { threshold: 0.05, rootMargin: '0px 0px -60px 0px' });
+  }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(function (el) {
     el.classList.add('anim');
     obs.observe(el);
@@ -197,13 +204,21 @@ function initReveal() {
 
 /* ── Nav & UI ─────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function () {
-  // Scroll shadow on nav + scroll-to-top button visibility
+  // Scroll handler — throttled via rAF for smooth performance
+  var scrollTicking = false;
   window.addEventListener('scroll', function () {
-    var nav = document.getElementById('navbar');
-    if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
-    var btn = document.getElementById('scrollTopBtn');
-    if (btn) btn.classList.toggle('visible', window.scrollY > 400);
-  });
+    if (!scrollTicking) {
+      requestAnimationFrame(function () {
+        var y = window.scrollY;
+        var nav = document.getElementById('navbar');
+        if (nav) nav.classList.toggle('scrolled', y > 40);
+        var btn = document.getElementById('scrollTopBtn');
+        if (btn) btn.classList.toggle('visible', y > 400);
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
+  }, { passive: true });
 
   // Hamburger
   var hamburger = document.getElementById('hamburger');
