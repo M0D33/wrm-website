@@ -3,318 +3,126 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Products — White Rocks Mining Company</title>
+<title>White Rocks Mining Company</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="products.css"/>
+  <link rel="stylesheet" href="index.css"/>
   <link rel="icon" type="image/x-icon" href="favicon.ico"/>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-nav.png"/>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
 </head>
 <body>
-
-
-<!-- NAV -->
-<nav id="navbar">
-  <a href="index.html" class="nav-logo">
-    <img src="assets/logo-nav.png" alt="White Rocks Mining" width="149" height="44" class="logo-img"/>
-  </a>
-  <ul class="nav-links">
-    <li><a href="index.html"    data-en="Home"     data-ar="الرئيسية">Home</a></li>
-    <li><a href="about.html"    data-en="About Us" data-ar="من نحن">About Us</a></li>
-    <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
-    <li><a href="team.html"     data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
-    <li><a href="clients.html"  data-en="Clients"  data-ar="عملاؤنا">Clients</a></li>
-    <li><a href="contact.html"  data-en="Contact"  data-ar="اتصل بنا">Contact</a></li>
-  </ul>
-  <div class="nav-right">
-    <button class="lang-toggle" id="langToggle">عربي</button>
-    <a href="contact.html" class="btn-nav" data-en="Get a Quote" data-ar="طلب عرض سعر">Get a Quote</a>
-  </div>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html"    data-en="Home"     data-ar="الرئيسية">Home</a>
-  <a href="about.html"    data-en="About Us" data-ar="من نحن">About Us</a>
-  <a href="products.html" data-en="Products" data-ar="المنتجات">Products</a>
-  <a href="team.html"     data-en="Our Team" data-ar="فريقنا">Our Team</a>
-  <a href="clients.html"  data-en="Clients"  data-ar="عملاؤنا">Clients</a>
-  <a href="contact.html"  data-en="Contact"  data-ar="اتصل بنا">Contact</a>
-</div>
-
 <!-- HERO -->
-<div class="page-hero">
+<section id="hero">
   <div class="hero-bar"></div><div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-accent-line"></div>
-  <div class="hero-inner">
-    <div class="breadcrumb">
-      <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
-      <span class="breadcrumb-sep">/</span>
-      <span data-en="Products" data-ar="المنتجات">Products</span>
-    </div>
-    <h1 class="page-title">Our <span class="accent" data-en="Industrial Minerals" data-ar="المعادن الصناعية">Industrial Minerals</span></h1>
-    <p class="page-desc" data-en="Three premium silica products — extracted from high-purity Saudi deposits, processed to exact specifications, and backed by full chemical and physical analysis." data-ar="ثلاثة منتجات سيليكا متميزة — مستخرجة من رواسب سعودية عالية النقاء، ومعالجة وفق مواصفات دقيقة، ومدعومة بتحليل كيميائي وفيزيائي كامل.">Three premium silica products — extracted from high-purity Saudi deposits, processed to exact specifications, and backed by full chemical and physical analysis.</p>
-    <div class="hero-pills">
-      <a href="#silica-sand"  class="hero-pill"><span class="pill-dot" style="background:#2272C3;"></span><span data-en="Silica Sand"  data-ar="رمل السيليكا">Silica Sand</span></a>
-      <a href="#silica-flour" class="hero-pill"><span class="pill-dot" style="background:#2a9a3a;"></span><span data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</span></a>
-      <a href="#frac-sand"    class="hero-pill"><span class="pill-dot" style="background:#C45A1A;"></span><span data-en="Frac Sand"    data-ar="رمل الفراك">Frac Sand</span></a>
+  <div class="hero-content">
+    <div class="hero-badge"><div class="badge-dot"></div><span class="badge-text" data-en="Industrial Minerals · Est. 2022 · Saudi Arabia" data-ar="معادن صناعية · تأسست 2022 · المملكة العربية السعودية">Industrial Minerals · Est. 2022 · Saudi Arabia</span></div>
+    <h1 class="hero-title"><span data-en="Precision Minerals," data-ar="معادن دقيقة،">Precision Minerals,</span><br/><span class="accent" data-en="Trusted Quality." data-ar="جودة موثوقة.">Trusted Quality.</span></h1>
+    <p class="hero-desc" data-en="White Rocks Mining delivers premium industrial silica minerals — with just-in-time logistics — to the industries that demand the highest purity standards across Saudi Arabia and beyond." data-ar="تقدم وايت روكس للتعدين معادن سيليكا صناعية متميزة — بلوجستيات فورية — للصناعات التي تتطلب أعلى معايير النقاء في المملكة العربية السعودية وخارجها.">White Rocks Mining delivers premium industrial silica minerals — with just-in-time logistics — to the industries that demand the highest purity standards across Saudi Arabia and beyond.</p>
+    <div class="hero-actions">
+      <a href="products.html" class="btn-hero" data-en="Explore Products →" data-ar="استكشف المنتجات →">Explore Products →</a>
+      <a href="about.html" class="btn-ghost" data-en="Our Story" data-ar="قصتنا">Our Story</a>
     </div>
   </div>
-</div>
-
-<!-- STICKY TABS -->
-<div class="product-tabs-bar" id="productTabs">
-  <a href="#silica-sand"  class="p-tab active" data-en="🏔️  Silica Sand"  data-ar="🏔️  رمل السيليكا">🏔️  Silica Sand</a>
-  <a href="#silica-flour" class="p-tab"        data-en="⚗️  Silica Flour" data-ar="⚗️  دقيق السيليكا">⚗️  Silica Flour</a>
-  <a href="#frac-sand"    class="p-tab"        data-en="🛢️  Frac Sand"    data-ar="🛢️  رمل الفراك">🛢️  Frac Sand</a>
-</div>
-
-<!-- ═══ PRODUCT 1: SILICA SAND ═══ -->
-<section id="silica-sand" class="prod-section">
-  <div class="prod-header reveal">
-    <div>
-      <div class="eyebrow" data-en="Industrial Mineral · Product 01" data-ar="معدن صناعي · المنتج 01">Industrial Mineral · Product 01</div>
-      <h2 class="prod-title" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</h2>
-      <p class="prod-intro" data-en="Our Silica Sand is sourced from high-purity natural deposits across Saudi Arabia and processed through multi-stage screening, washing, and drying to achieve precise grain size distributions. Each batch undergoes rigorous quality testing to ensure consistent purity and performance for glass manufacturing, construction, water treatment, foundry, and abrasive industries." data-ar="يُستخرج رمل السيليكا لدينا من رواسب طبيعية عالية النقاء في أنحاء المملكة العربية السعودية، ويُعالج عبر مراحل متعددة من الغربلة والغسيل والتجفيف لتحقيق توزيعات دقيقة لحجم الحبيبات. تخضع كل دفعة لاختبارات جودة صارمة لضمان النقاء والأداء المتسقين في صناعات الزجاج والبناء ومعالجة المياه والمسابك والمواد الكاشطة.">Our Silica Sand is sourced from high-purity natural deposits across Saudi Arabia and processed through multi-stage screening, washing, and drying to achieve precise grain size distributions. Each batch undergoes rigorous quality testing to ensure consistent purity and performance for glass manufacturing, construction, water treatment, foundry, and abrasive industries.</p>
-      <div class="use-tags">
-        <span class="use-tag" data-en="Glass Manufacturing"    data-ar="صناعة الزجاج">Glass Manufacturing</span>
-        <span class="use-tag" data-en="Construction"           data-ar="البناء">Construction</span>
-        <span class="use-tag" data-en="Water Filtration"       data-ar="تصفية المياه">Water Filtration</span>
-        <span class="use-tag" data-en="Foundry &amp; Casting"  data-ar="المسابك والصب">Foundry &amp; Casting</span>
-        <span class="use-tag" data-en="Abrasive Blasting"      data-ar="النفخ الكاشط">Abrasive Blasting</span>
-        <span class="use-tag" data-en="Ceramics"               data-ar="السيراميك">Ceramics</span>
+  <div class="hero-card-wrap">
+    <div class="hero-card">
+      <div class="hc-label" data-en="Core Products" data-ar="المنتجات الأساسية">Core Products</div>
+      <div class="hc-list">
+        <a href="products.html#silica-sand" class="hc-item"><div class="hc-icon">🏔️</div><div><div class="hc-name" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</div><div class="hc-sub" data-en="High-purity industrial grade" data-ar="درجة صناعية عالية النقاء">High-purity industrial grade</div></div></a>
+        <a href="products.html#silica-flour" class="hc-item"><div class="hc-icon">⚗️</div><div><div class="hc-name" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</div><div class="hc-sub" data-en="Ultra-fine milled silica" data-ar="سيليكا مطحونة ناعمة جداً">Ultra-fine milled silica</div></div></a>
+        <a href="products.html#frac-sand" class="hc-item"><div class="hc-icon">🛢️</div><div><div class="hc-name" data-en="Frac Sand" data-ar="رمل الفراك">Frac Sand</div><div class="hc-sub" data-en="Oil &amp; gas proppant" data-ar="دعامة النفط والغاز">Oil &amp; gas proppant</div></div></a>
       </div>
     </div>
-    <div class="prod-visual v-sand"><div class="visual-glow"></div>🏔️</div>
-  </div>
-
-  <div class="tables-grid reveal">
-    <div class="table-card">
-      <div class="table-head th-blue"><span class="th-icon">🧪</span><span class="th-title" data-en="Chemical Analysis" data-ar="التحليل الكيميائي">Chemical Analysis</span></div>
-      <table class="spec-table">
-        <thead><tr><th data-en="Oxide / Component" data-ar="الأكسيد / المكوّن">Oxide / Component</th><th style="text-align:right;" data-en="Typical %" data-ar="النسبة المعتادة %">Typical %</th></tr></thead>
-        <tbody>
-          <tr><td class="td-k">SiO₂</td><td class="td-v">XX.XX %</td></tr>
-          <tr><td class="td-k">Al₂O₃</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">Fe₂O₃</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">TiO₂</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">CaO</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">MgO</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">Na₂O</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">K₂O</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k" data-en="Loss on Ignition (LOI)" data-ar="فقدان الحرق (LOI)">Loss on Ignition (LOI)</td><td class="td-v">X.XX %</td></tr>
-        </tbody>
-      </table>
-      <div class="table-note" data-en="* Tested per ASTM / ISO standards. Replace XX values with certified lab results." data-ar="* مختبر وفق معايير ASTM / ISO. استبدل قيم XX بنتائج المختبر المعتمدة.">* Tested per ASTM / ISO standards. Replace XX values with certified lab results.</div>
-    </div>
-    <div class="table-card">
-      <div class="table-head th-orange"><span class="th-icon">📐</span><span class="th-title" data-en="Physical Properties — Mesh &amp; Retained %" data-ar="الخصائص الفيزيائية — المش ونسبة الاحتجاز %">Physical Properties — Mesh &amp; Retained %</span></div>
-      <table class="spec-table">
-        <thead><tr><th data-en="Mesh Size / Micron (µm)" data-ar="حجم المش / ميكرون (µm)">Mesh Size / Micron (µm)</th><th style="text-align:right;" data-en="Retained %" data-ar="نسبة الاحتجاز %">Retained %</th></tr></thead>
-        <tbody>
-          <tr><td class="td-k">#8 Mesh / 2360 µm</td><td class="td-v">X.X %</td></tr>
-          <tr><td class="td-k">#12 Mesh / 1680 µm</td><td class="td-v">X.X %</td></tr>
-          <tr><td class="td-k">#16 Mesh / 1180 µm</td><td class="td-v">X.X %</td></tr>
-          <tr><td class="td-k">#20 Mesh / 850 µm</td><td class="td-v">XX.X %</td></tr>
-          <tr><td class="td-k">#30 Mesh / 600 µm</td><td class="td-v">XX.X %</td></tr>
-          <tr><td class="td-k">#40 Mesh / 425 µm</td><td class="td-v">XX.X %</td></tr>
-          <tr><td class="td-k">#50 Mesh / 300 µm</td><td class="td-v">X.X %</td></tr>
-          <tr><td class="td-k">#100 Mesh / 150 µm</td><td class="td-v">X.X %</td></tr>
-          <tr><td class="td-k" data-en="Pan / &lt;150 µm" data-ar="قاع / أقل من 150 µm">Pan / &lt;150 µm</td><td class="td-v">X.X %</td></tr>
-        </tbody>
-      </table>
-      <div class="table-note" data-en="* Custom grain size distributions available on request." data-ar="* توزيعات حجم الحبيبات المخصصة متوفرة عند الطلب.">* Custom grain size distributions available on request.</div>
-    </div>
-  </div>
-  <div class="cta-strip reveal">
-    <span class="cta-text" data-en="Need a custom mesh size or specific SiO₂ purity grade? Our team can tailor silica sand specifications to your exact application." data-ar="هل تحتاج حجم مش مخصص أو درجة نقاء SiO₂ محددة؟ يمكن لفريقنا تخصيص مواصفات رمل السيليكا وفق تطبيقك الدقيق.">Need a custom mesh size or specific SiO₂ purity grade? Our team can tailor silica sand specifications to your exact application.</span>
-    <a href="contact.html" class="btn-cta" data-en="Request a Quote →" data-ar="طلب عرض سعر ←">Request a Quote →</a>
   </div>
 </section>
-
-<div class="prod-divider"></div>
-
-<!-- ═══ PRODUCT 2: SILICA FLOUR ═══ -->
-<section id="silica-flour" class="prod-section bg-alt">
-  <div class="prod-header reveal">
-    <div>
-      <div class="eyebrow" data-en="Industrial Mineral · Product 02" data-ar="معدن صناعي · المنتج 02">Industrial Mineral · Product 02</div>
-      <h2 class="prod-title" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</h2>
-      <p class="prod-intro" data-en="Silica Flour is ultra-fine milled silica produced through precision ball-milling and air classification, delivering tight particle size control down to sub-50 micron ranges. Its high chemical purity and consistent fineness make it indispensable in oil-well cementing, ceramics, paints, coatings, rubber compounding, and specialty chemical manufacturing." data-ar="دقيق السيليكا هو سيليكا مطحونة ناعمة جداً تُنتج عبر الطحن الكروي الدقيق والتصنيف الهوائي، مما يوفر تحكمًا محكمًا في حجم الجسيمات حتى نطاقات أقل من 50 ميكرون. يجعله نقاؤه الكيميائي العالي ونعومته المتسقة لا غنى عنه في تسمنت آبار النفط والسيراميك والدهانات والطلاءات وتركيب المطاط والمواد الكيميائية المتخصصة.">Silica Flour is ultra-fine milled silica produced through precision ball-milling and air classification, delivering tight particle size control down to sub-50 micron ranges. Its high chemical purity and consistent fineness make it indispensable in oil-well cementing, ceramics, paints, coatings, rubber compounding, and specialty chemical manufacturing.</p>
-      <div class="use-tags">
-        <span class="use-tag" data-en="Oil-Well Cementing"      data-ar="تسمنت آبار النفط">Oil-Well Cementing</span>
-        <span class="use-tag" data-en="Ceramics &amp; Tiles"    data-ar="السيراميك والبلاط">Ceramics &amp; Tiles</span>
-        <span class="use-tag" data-en="Paints &amp; Coatings"   data-ar="الدهانات والطلاءات">Paints &amp; Coatings</span>
-        <span class="use-tag" data-en="Rubber Compounding"      data-ar="تركيب المطاط">Rubber Compounding</span>
-        <span class="use-tag" data-en="Adhesives &amp; Sealants" data-ar="المواد اللاصقة والمانعات">Adhesives &amp; Sealants</span>
-        <span class="use-tag" data-en="Specialty Chemicals"     data-ar="المواد الكيميائية المتخصصة">Specialty Chemicals</span>
-      </div>
-    </div>
-    <div class="prod-visual v-flour"><div class="visual-glow"></div>⚗️</div>
+<!-- STATS -->
+<div id="stats"><div class="stats-grid reveal">
+  <div class="stat-item"><div class="stat-num"><span id="s1">0</span><span class="stat-unit">+</span></div><div class="stat-label" data-en="Years in Operation" data-ar="سنوات من الخبرة">Years in Operation</div></div>
+  <div class="stat-item"><div class="stat-num"><span id="s2">0</span><span class="stat-unit">+</span></div><div class="stat-label" data-en="Projects Completed" data-ar="مشاريع منجزة">Projects Completed</div></div>
+  <div class="stat-item"><div class="stat-num"><span id="s3">0</span><span class="stat-unit">K+</span></div><div class="stat-label" data-en="Tons Delivered" data-ar="طن تم توصيله">Tons Delivered</div></div>
+  <div class="stat-item"><div class="stat-num"><span id="s4">0</span><span class="stat-unit">+</span></div><div class="stat-label" data-en="Countries Served" data-ar="دول نخدمها">Countries Served</div></div>
+</div></div>
+<!-- PRODUCTS -->
+<section id="products-section">
+  <div class="section-hd reveal">
+    <div class="eyebrow" data-en="What We Offer" data-ar="ما نقدمه">What We Offer</div>
+    <h2 class="section-title" data-en="Our Industrial Minerals" data-ar="معادننا الصناعية">Our Industrial Minerals</h2>
+    <p class="section-sub" data-en="Premium silica minerals extracted and processed to exact industry specifications — with full chemical and physical analysis for every product." data-ar="معادن سيليكا متميزة مستخرجة ومعالجة وفق مواصفات صناعية دقيقة مع تحليل كيميائي وفيزيائي كامل لكل منتج.">Premium silica minerals extracted and processed to exact industry specifications — with full chemical and physical analysis for every product.</p>
   </div>
-
-  <div class="tables-grid reveal">
-    <div class="table-card">
-      <div class="table-head th-blue"><span class="th-icon">🧪</span><span class="th-title" data-en="Chemical Analysis" data-ar="التحليل الكيميائي">Chemical Analysis</span></div>
-      <table class="spec-table">
-        <thead><tr><th data-en="Oxide / Component" data-ar="الأكسيد / المكوّن">Oxide / Component</th><th style="text-align:right;" data-en="Typical %" data-ar="النسبة المعتادة %">Typical %</th></tr></thead>
-        <tbody>
-          <tr><td class="td-k">SiO₂</td><td class="td-v">XX.XX %</td></tr>
-          <tr><td class="td-k">Al₂O₃</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">Fe₂O₃</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">TiO₂</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">CaO</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">MgO</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">Na₂O + K₂O</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k" data-en="Loss on Ignition (LOI)" data-ar="فقدان الحرق (LOI)">Loss on Ignition (LOI)</td><td class="td-v">X.XX %</td></tr>
-        </tbody>
-      </table>
-      <div class="table-note" data-en="* Replace with certified lab analysis before publishing." data-ar="* استبدل بتحليل مختبر معتمد قبل النشر.">* Replace with certified lab analysis before publishing.</div>
-    </div>
-    <div class="table-card">
-      <div class="table-head th-orange"><span class="th-icon">📐</span><span class="th-title" data-en="Physical Properties — Mesh &amp; Retained %" data-ar="الخصائص الفيزيائية — المش ونسبة الاحتجاز %">Physical Properties — Mesh &amp; Retained %</span></div>
-      <table class="spec-table">
-        <thead><tr><th data-en="Mesh Size / Micron (µm)" data-ar="حجم المش / ميكرون (µm)">Mesh Size / Micron (µm)</th><th style="text-align:right;" data-en="Retained %" data-ar="نسبة الاحتجاز %">Retained %</th></tr></thead>
-        <tbody>
-          <tr><td class="td-k">#100 Mesh / 150 µm</td><td class="td-v">X.X %</td></tr>
-          <tr><td class="td-k">#150 Mesh / 106 µm</td><td class="td-v">X.X %</td></tr>
-          <tr><td class="td-k">#200 Mesh / 75 µm</td><td class="td-v">XX.X %</td></tr>
-          <tr><td class="td-k">#270 Mesh / 53 µm</td><td class="td-v">XX.X %</td></tr>
-          <tr><td class="td-k">#325 Mesh / 45 µm</td><td class="td-v">XX.X %</td></tr>
-          <tr><td class="td-k">#400 Mesh / 38 µm</td><td class="td-v">X.X %</td></tr>
-          <tr><td class="td-k" data-en="Pan / &lt;38 µm" data-ar="قاع / أقل من 38 µm">Pan / &lt;38 µm</td><td class="td-v">XX.X %</td></tr>
-        </tbody>
-      </table>
-      <div class="table-note" data-en="* Standard grades: 200, 325, 400 mesh. Custom fineness available on request." data-ar="* الدرجات القياسية: 200، 325، 400 مش. النعومة المخصصة متوفرة عند الطلب.">* Standard grades: 200, 325, 400 mesh. Custom fineness available on request.</div>
-    </div>
-  </div>
-  <div class="cta-strip reveal">
-    <span class="cta-text" data-en="Available in standard 200, 325 and 400 mesh grades. Custom particle size distributions available for specialist applications." data-ar="متوفر بدرجات قياسية 200 و325 و400 مش. توزيعات حجم الجسيمات المخصصة متوفرة للتطبيقات المتخصصة.">Available in standard 200, 325 and 400 mesh grades. Custom particle size distributions available for specialist applications.</span>
-    <a href="contact.html" class="btn-cta" data-en="Request a Quote →" data-ar="طلب عرض سعر ←">Request a Quote →</a>
+  <div class="products-grid">
+    <a href="products.html#silica-sand" class="prod-card reveal"><div class="prod-body"><div class="prod-pill" data-en="Industrial Mineral" data-ar="معدن صناعي">Industrial Mineral</div><h3 class="prod-name" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</h3><p class="prod-desc" data-en="High-purity silica for glass manufacturing, construction, water filtration, foundry, and abrasive applications." data-ar="سيليكا عالية النقاء لصناعة الزجاج والبناء وتصفية المياه والمسابك والتطبيقات الكاشطة.">High-purity silica for glass manufacturing, construction, water filtration, foundry, and abrasive applications.</p><div class="prod-link" data-en="View Full Specs →" data-ar="عرض المواصفات الكاملة →">View Full Specs →</div></div><div class="prod-card-ghost">01</div></a>
+    <a href="products.html#silica-flour" class="prod-card reveal"><div class="prod-body"><div class="prod-pill" data-en="Industrial Mineral" data-ar="معدن صناعي">Industrial Mineral</div><h3 class="prod-name" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</h3><p class="prod-desc" data-en="Ultra-fine milled silica for oilfield cementing, ceramics, paints, coatings, and specialty chemicals." data-ar="سيليكا مطحونة ناعمة جداً لتسمنت آبار النفط والسيراميك والدهانات والطلاءات والمواد الكيميائية المتخصصة.">Ultra-fine milled silica for oilfield cementing, ceramics, paints, coatings, and specialty chemicals.</p><div class="prod-link" data-en="View Full Specs →" data-ar="عرض المواصفات الكاملة →">View Full Specs →</div></div><div class="prod-card-ghost">02</div></a>
+    <a href="products.html#frac-sand" class="prod-card reveal"><div class="prod-body"><div class="prod-pill" data-en="Industrial Mineral" data-ar="معدن صناعي">Industrial Mineral</div><h3 class="prod-name" data-en="Frac Sand" data-ar="رمل الفراك">Frac Sand</h3><p class="prod-desc" data-en="High-strength round-grain proppant for hydraulic fracturing. Tested to API/ISO 13503-2 standards." data-ar="دعامة حبيبات مستديرة عالية المقاومة للكسر الهيدروليكي. مختبرة وفق معايير API/ISO 13503-2.">High-strength round-grain proppant for hydraulic fracturing. Tested to API/ISO 13503-2 standards.</p><div class="prod-link" data-en="View Full Specs →" data-ar="عرض المواصفات الكاملة →">View Full Specs →</div></div><div class="prod-card-ghost">03</div></a>
   </div>
 </section>
-
-<div class="prod-divider"></div>
-
-<!-- ═══ PRODUCT 3: FRAC SAND ═══ -->
-<section id="frac-sand" class="prod-section">
-  <div class="prod-header reveal">
-    <div>
-      <div class="eyebrow" data-en="Industrial Mineral · Product 03" data-ar="معدن صناعي · المنتج 03">Industrial Mineral · Product 03</div>
-      <h2 class="prod-title" data-en="Frac Sand" data-ar="رمل الفراك">Frac Sand</h2>
-      <p class="prod-intro" data-en="WRM Frac Sand is a high-purity, high-strength proppant engineered for hydraulic fracturing operations. Its high roundness and sphericity prop open fractures in reservoir rock, maximising hydrocarbon flow. All physical parameters are tested to API/ISO 13503-2 standards covering crush resistance, roundness, sphericity, turbidity, and acid solubility." data-ar="رمل الفراك من WRM هو دعامة عالية النقاء وعالية المقاومة مُهندسة لعمليات الكسر الهيدروليكي. تدعم استدارته وكروية العالية الشقوق في صخور الخزان لتعظيم تدفق الهيدروكربونات. تُختبر جميع المعاملات الفيزيائية وفق معايير API/ISO 13503-2 بما تشمل مقاومة السحق والاستدارة والكروية والعكارة وقابلية الذوبان الحمضي.">WRM Frac Sand is a high-purity, high-strength proppant engineered for hydraulic fracturing operations. Its high roundness and sphericity prop open fractures in reservoir rock, maximising hydrocarbon flow. All physical parameters are tested to API/ISO 13503-2 standards covering crush resistance, roundness, sphericity, turbidity, and acid solubility.</p>
-      <div class="use-tags">
-        <span class="use-tag" data-en="Hydraulic Fracturing"       data-ar="الكسر الهيدروليكي">Hydraulic Fracturing</span>
-        <span class="use-tag" data-en="Oil &amp; Gas Recovery"     data-ar="استخراج النفط والغاز">Oil &amp; Gas Recovery</span>
-        <span class="use-tag" data-en="Well Completion"             data-ar="إكمال الآبار">Well Completion</span>
-        <span class="use-tag" data-en="Proppant Pack Design"        data-ar="تصميم حزمة الدعامات">Proppant Pack Design</span>
-        <span class="use-tag" data-en="Tight Reservoir Stimulation" data-ar="تحفيز الخزانات الضيقة">Tight Reservoir Stimulation</span>
-      </div>
-    </div>
-    <div class="prod-visual v-frac"><div class="visual-glow"></div>🛢️</div>
-  </div>
-
-  <div class="tables-grid reveal">
-    <div class="table-card">
-      <div class="table-head th-blue"><span class="th-icon">🧪</span><span class="th-title" data-en="Chemical Analysis" data-ar="التحليل الكيميائي">Chemical Analysis</span></div>
-      <table class="spec-table">
-        <thead><tr><th data-en="Oxide / Component" data-ar="الأكسيد / المكوّن">Oxide / Component</th><th style="text-align:right;" data-en="Typical %" data-ar="النسبة المعتادة %">Typical %</th></tr></thead>
-        <tbody>
-          <tr><td class="td-k">SiO₂</td><td class="td-v">XX.XX %</td></tr>
-          <tr><td class="td-k">Al₂O₃</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">Fe₂O₃</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">TiO₂</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k">CaO + MgO</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k" data-en="Other Oxides" data-ar="أكاسيد أخرى">Other Oxides</td><td class="td-v">X.XX %</td></tr>
-          <tr><td class="td-k" data-en="Loss on Ignition (LOI)" data-ar="فقدان الحرق (LOI)">Loss on Ignition (LOI)</td><td class="td-v">X.XX %</td></tr>
-        </tbody>
-      </table>
-      <div class="table-note" data-en="* Replace with certified lab results." data-ar="* استبدل بنتائج المختبر المعتمدة.">* Replace with certified lab results.</div>
-    </div>
-    <div class="table-card">
-      <div class="table-head th-orange"><span class="th-icon">📐</span><span class="th-title" data-en="API / Physical Properties (ISO 13503-2)" data-ar="خصائص API / الفيزيائية (ISO 13503-2)">API / Physical Properties (ISO 13503-2)</span></div>
-      <table class="spec-table">
-        <thead><tr><th data-en="Property" data-ar="الخاصية">Property</th><th style="text-align:right;" data-en="Value / Limit" data-ar="القيمة / الحد">Value / Limit</th></tr></thead>
-        <tbody>
-          <tr><td class="td-k" data-en="Mesh Size (US Sieve)" data-ar="حجم المش (منخل US)">Mesh Size (US Sieve)</td><td class="td-v">XX/XX</td></tr>
-          <tr><td class="td-k" data-en="Roundness (Krumbein)" data-ar="الاستدارة (كرومباين)">Roundness (Krumbein)</td><td class="td-v">≥ X.X</td></tr>
-          <tr><td class="td-k" data-en="Sphericity (Krumbein)" data-ar="الكروية (كرومباين)">Sphericity (Krumbein)</td><td class="td-v">≥ X.X</td></tr>
-          <tr><td class="td-k" data-en="Turbidity (NTU)" data-ar="العكارة (NTU)">Turbidity (NTU)</td><td class="td-v">&lt; XXX</td></tr>
-          <tr><td class="td-k" data-en="Crush Resistance (psi)" data-ar="مقاومة السحق (psi)">Crush Resistance (psi)</td><td class="td-v">XX,000</td></tr>
-          <tr><td class="td-k" data-en="Acid Solubility (%)" data-ar="قابلية الذوبان الحمضي (%)">Acid Solubility (%)</td><td class="td-v">&lt; X %</td></tr>
-          <tr><td class="td-k" data-en="Bulk Density (g/cm³)" data-ar="الكثافة الظاهرية (g/cm³)">Bulk Density (g/cm³)</td><td class="td-v">X.XX</td></tr>
-          <tr><td class="td-k" data-en="Specific Gravity" data-ar="الكثافة النوعية">Specific Gravity</td><td class="td-v">X.XX</td></tr>
-        </tbody>
-      </table>
-      <div class="table-note" data-en="* All values tested per API RP 19C / ISO 13503-2." data-ar="* جميع القيم مختبرة وفق API RP 19C / ISO 13503-2.">* All values tested per API RP 19C / ISO 13503-2.</div>
-    </div>
-  </div>
-  <div class="cta-strip reveal">
-    <span class="cta-text" data-en="Frac Sand available in multiple mesh sizes. Contact us to discuss proppant pack design, wellbore requirements, and volume pricing." data-ar="رمل الفراك متوفر بأحجام مش متعددة. تواصل معنا لمناقشة تصميم حزمة الدعامات ومتطلبات البئر وأسعار الحجم.">Frac Sand available in multiple mesh sizes. Contact us to discuss proppant pack design, wellbore requirements, and volume pricing.</span>
-    <a href="contact.html" class="btn-cta" data-en="Request a Quote →" data-ar="طلب عرض سعر ←">Request a Quote →</a>
-  </div>
-</section>
-
-<!-- ═══ COMPARISON TABLE ═══ -->
-<section id="comparison">
-  <div class="comp-inner">
+<div class="divider"></div>
+<!-- ABOUT PREVIEW -->
+<section id="about-preview">
+  <div class="about-grid">
+    <div class="about-wrap reveal"><div class="about-visual">🏜️</div><div class="about-badge"><span class="ab-num">2022</span><span class="ab-lbl" data-en="Est. Saudi Arabia" data-ar="تأسست في السعودية">Est. Saudi Arabia</span></div></div>
     <div class="reveal">
-      <div class="comp-eyebrow" data-en="Side-by-Side Overview" data-ar="مقارنة جنبًا إلى جنب">Side-by-Side Overview</div>
-      <h2 class="comp-title" data-en="Product Comparison" data-ar="مقارنة المنتجات">Product Comparison</h2>
-      <p class="comp-sub" data-en="A quick reference guide to help you select the right product for your application." data-ar="دليل مرجعي سريع لمساعدتك في اختيار المنتج المناسب لتطبيقك.">A quick reference guide to help you select the right product for your application.</p>
-    </div>
-    <div class="comp-wrap reveal">
-      <table class="comp-table">
-        <thead><tr>
-          <th data-en="Attribute" data-ar="السمة">Attribute</th>
-          <th class="pc" data-en="Silica Sand"  data-ar="رمل السيليكا">Silica Sand</th>
-          <th class="pc" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</th>
-          <th class="pc" data-en="Frac Sand"    data-ar="رمل الفراك">Frac Sand</th>
-        </tr></thead>
-        <tbody>
-          <tr><td class="row-lbl" data-en="Particle Size Range" data-ar="نطاق حجم الجسيمات">Particle Size Range</td><td data-en="150 µm – 2360 µm" data-ar="150 – 2360 ميكرون">150 µm – 2360 µm</td><td data-en="&lt;38 µm – 150 µm" data-ar="أقل من 38 – 150 ميكرون">&lt;38 µm – 150 µm</td><td data-en="Custom mesh sizes" data-ar="أحجام مش مخصصة">Custom mesh sizes</td></tr>
-          <tr><td class="row-lbl" data-en="Form" data-ar="الشكل">Form</td><td data-en="Granular" data-ar="حبيبي">Granular</td><td data-en="Fine powder" data-ar="مسحوق ناعم">Fine powder</td><td data-en="Rounded granular" data-ar="حبيبي مستدير">Rounded granular</td></tr>
-          <tr><td class="row-lbl" data-en="SiO₂ Purity" data-ar="نقاء SiO₂">SiO₂ Purity</td><td class="hl" data-en="High" data-ar="عالي">High</td><td class="hl" data-en="High" data-ar="عالي">High</td><td class="hl" data-en="High" data-ar="عالي">High</td></tr>
-          <tr><td class="row-lbl" data-en="API / ISO Standard" data-ar="معيار API / ISO">API / ISO Standard</td><td><span class="dsh">—</span></td><td><span class="dsh">—</span></td><td class="hl">ISO 13503-2</td></tr>
-          <tr><td class="row-lbl" data-en="Key Application" data-ar="التطبيق الرئيسي">Key Application</td><td data-en="Glass, construction, water" data-ar="زجاج، بناء، مياه">Glass, construction, water</td><td data-en="Oilfield cementing, paints, ceramics" data-ar="تسمنت نفطي، دهانات، سيراميك">Oilfield cementing, paints, ceramics</td><td data-en="Hydraulic fracturing" data-ar="الكسر الهيدروليكي">Hydraulic fracturing</td></tr>
-          <tr><td class="row-lbl" data-en="Custom Grades" data-ar="درجات مخصصة">Custom Grades</td><td><span class="chk">✔</span></td><td><span class="chk">✔</span></td><td><span class="chk">✔</span></td></tr>
-          <tr><td class="row-lbl" data-en="Packaging" data-ar="التعبئة">Packaging</td><td data-en="Bulk / Jumbo bags" data-ar="سائب / أكياس جامبو">Bulk / Jumbo bags</td><td data-en="25 kg bags / Jumbo bags" data-ar="أكياس 25 كجم / جامبو">25 kg bags / Jumbo bags</td><td data-en="Bulk / Jumbo bags" data-ar="سائب / أكياس جامبو">Bulk / Jumbo bags</td></tr>
-        </tbody>
-      </table>
+      <div class="eyebrow" data-en="Who We Are" data-ar="من نحن">Who We Are</div>
+      <h2 class="section-title" data-en="Pioneering Mining Excellence" data-ar="رواد التميز في التعدين">Pioneering Mining Excellence</h2>
+      <p class="section-sub" data-en="As White Rocks Mining, we pioneer mining excellence by delivering premium white sand and offering just-in-time logistics services. We forge industry partnerships, prioritise employee well-being, and contribute to a sustainable and impactful future for Saudi Arabia." data-ar="في وايت روكس للتعدين، نرسخ مفهوم التميز في التعدين من خلال توفير الرمال البيضاء الفاخرة وتقديم خدمات لوجستية فورية. نبني شراكات صناعية ونُولي الأولوية لرفاهية موظفينا ونساهم في مستقبل مستدام للمملكة العربية السعودية.">As White Rocks Mining, we pioneer mining excellence by delivering premium white sand and offering just-in-time logistics services. We forge industry partnerships, prioritise employee well-being, and contribute to a sustainable and impactful future for Saudi Arabia.</p>
+      <div class="vals">
+        <div class="val-item"><div class="val-icon">✅</div><div><div class="val-title" data-en="Uncompromising Quality" data-ar="جودة لا تساوم">Uncompromising Quality</div><div class="val-desc" data-en="Every batch tested against international purity and consistency standards before delivery." data-ar="كل دفعة تُختبر وفق معايير النقاء والاتساق الدولية قبل التسليم.">Every batch tested against international purity and consistency standards before delivery.</div></div></div>
+        <div class="val-item"><div class="val-icon">🚛</div><div><div class="val-title" data-en="In-House Logistics System" data-ar="نظام اللوجستيات الداخلي">In-House Logistics System</div><div class="val-desc" data-en="Our proprietary logistics platform ensures just-in-time delivery across all branches." data-ar="منصة اللوجستيات الخاصة لدينا تضمن التسليم في الوقت المحدد عبر جميع الفروع.">Our proprietary logistics platform ensures just-in-time delivery across all branches.</div></div></div>
+        <div class="val-item"><div class="val-icon">🌱</div><div><div class="val-title" data-en="Environmental Stewardship" data-ar="الإشراف البيئي">Environmental Stewardship</div><div class="val-desc" data-en="Responsible extraction practices and a commitment to sustainable operations at every site." data-ar="ممارسات استخراج مسؤولة والتزام بعمليات مستدامة في كل موقع.">Responsible extraction practices and a commitment to sustainable operations at every site.</div></div></div>
+      </div>
+      <a href="about.html" class="btn-solid" style="margin-top:28px;" data-en="Learn More About Us" data-ar="اعرف المزيد عنا">Learn More About Us</a>
     </div>
   </div>
 </section>
-
-<!-- ═══ QUALITY COMMITMENT ═══ -->
-<section id="quality">
-  <div style="text-align:center;margin-bottom:48px;" class="reveal">
-    <div class="eyebrow" style="justify-content:center;" data-en="Our Commitment" data-ar="التزامنا">Our Commitment</div>
-    <h2 class="prod-title" style="font-size:clamp(26px,3.5vw,40px);" data-en="Quality at Every Step" data-ar="الجودة في كل خطوة">Quality at Every Step</h2>
-    <p style="font-size:15.5px;color:var(--text-mid);max-width:520px;margin:0 auto;font-weight:300;line-height:1.75;" data-en="From deposit to delivery — every stage of our process is governed by strict quality protocols and certified standards." data-ar="من الرواسب إلى التسليم — كل مرحلة من مراحل عمليتنا تخضع لبروتوكولات جودة صارمة ومعايير معتمدة.">From deposit to delivery — every stage of our process is governed by strict quality protocols and certified standards.</p>
+<!-- CLIENTS MARQUEE -->
+<section id="clients-section">
+  <div class="section-hd reveal" style="text-align:center;">
+    <div class="eyebrow" style="justify-content:center;" data-en="Trusted By" data-ar="يثق بنا">Trusted By</div>
+    <h2 class="section-title" data-en="Our Valued Clients" data-ar="عملاؤنا الكرام">Our Valued Clients</h2>
+    <p class="section-sub" style="margin:0 auto;" data-en="Serving leading companies across construction, energy, manufacturing, ceramics, and more." data-ar="نخدم الشركات الرائدة في البناء والطاقة والتصنيع والسيراميك وغيرها.">Serving leading companies across construction, energy, manufacturing, ceramics, and more.</p>
   </div>
-  <div class="quality-grid">
-    <div class="q-card reveal">
-      <div class="q-icon">🔬</div>
-      <h3 class="q-title" data-en="In-House Lab Testing" data-ar="اختبارات مختبرية داخلية">In-House Lab Testing</h3>
-      <p class="q-desc" data-en="Each production batch undergoes full chemical and physical analysis before dispatch — XRF composition, sieve analysis, moisture content, and turbidity checks included." data-ar="تخضع كل دفعة إنتاجية لتحليل كيميائي وفيزيائي كامل قبل الإرسال — بما يشمل تركيب XRF وتحليل المنخل ومحتوى الرطوبة وفحوصات العكارة.">Each production batch undergoes full chemical and physical analysis before dispatch — XRF composition, sieve analysis, moisture content, and turbidity checks included.</p>
-    </div>
-    <div class="q-card reveal">
-      <div class="q-icon">📋</div>
-      <h3 class="q-title" data-en="ISO Certified Processes" data-ar="عمليات معتمدة ISO">ISO Certified Processes</h3>
-      <p class="q-desc" data-en="WRM achieved ISO certification in 2023, validating our quality management systems, operational consistency, and commitment to international production standards." data-ar="حصلت WRM على شهادة ISO في 2023، مما يُثبت أنظمة إدارة الجودة لدينا والاتساق التشغيلي والتزامنا بمعايير الإنتاج الدولية.">WRM achieved ISO certification in 2023, validating our quality management systems, operational consistency, and commitment to international production standards.</p>
-    </div>
-    <div class="q-card reveal">
-      <div class="q-icon">📦</div>
-      <h3 class="q-title" data-en="Traceable Supply Chain" data-ar="سلسلة إمداد قابلة للتتبع">Traceable Supply Chain</h3>
-      <p class="q-desc" data-en="Our in-house logistics management system tracks every shipment from extraction site to client delivery — ensuring full traceability and just-in-time arrival." data-ar="يتتبع نظام إدارة اللوجستيات الداخلي الخاص بنا كل شحنة من موقع الاستخراج حتى التسليم للعميل — مما يضمن التتبع الكامل والوصول في الوقت المحدد.">Our in-house logistics management system tracks every shipment from extraction site to client delivery — ensuring full traceability and just-in-time arrival.</p>
-    </div>
+  <div class="marquee-wrap reveal"><div class="marquee-track" id="mTrack"></div></div>
+  <div style="text-align:center;margin-top:34px;" class="reveal"><a href="clients.html" class="btn-solid" data-en="Meet Our Clients" data-ar="تعرف على عملائنا">Meet Our Clients</a></div>
+</section>
+<div class="divider"></div>
+<!-- TEAM PREVIEW -->
+<section id="team-section">
+  <div class="section-hd reveal" style="text-align:center;">
+    <div class="eyebrow" style="justify-content:center;" data-en="The People Behind It" data-ar="الأشخاص وراء ذلك">The People Behind It</div>
+    <h2 class="section-title" data-en="Meet Our Team" data-ar="تعرف على فريقنا">Meet Our Team</h2>
+    <p class="section-sub" style="margin:0 auto;" data-en="Industry experts united by a shared commitment to quality, safety, and client success." data-ar="خبراء صناعيون متحدون بالتزام مشترك بالجودة والسلامة ونجاح العميل.">Industry experts united by a shared commitment to quality, safety, and client success.</p>
+  </div>
+  <div class="team-grid" id="homeTeamGrid">
+    <!-- Populated by index.js from data/team.json -->
+  </div>
+  <div style="text-align:center;margin-top:38px;" class="reveal"><a href="team.html" class="btn-solid" data-en="View Full Team" data-ar="عرض الفريق الكامل">View Full Team</a></div>
+</section>
+<!-- SUCCESS STORIES -->
+<section id="success-section">
+  <div class="section-hd reveal">
+    <div class="eyebrow" data-en="Success Stories" data-ar="قصص النجاح">Success Stories</div>
+    <h2 class="section-title" data-en="Projects We're Proud Of" data-ar="مشاريع نفخر بها">Projects We're Proud Of</h2>
+    <p class="section-sub" data-en="Placeholder stories — replace with real completed project highlights." data-ar="قصص مؤقتة — استبدلها بأبرز المشاريع المنجزة الفعلية.">Placeholder stories — replace with real completed project highlights.</p>
+  </div>
+  <div class="stories-grid">
+    <div class="story-card reveal"><div class="story-icon">🏗️</div><div class="story-tag" data-en="Construction" data-ar="البناء">Construction</div><h3 class="story-title" data-en="[Project Name — Placeholder]" data-ar="[اسم المشروع — نص مؤقت]">[Project Name — Placeholder]</h3><p class="story-desc" data-en="Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details." data-ar="صف تحدي العميل وحل WRM والكميات المورّدة والنتيجة المحققة. استبدل بتفاصيل المشروع الحقيقية.">Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details.</p><div class="story-meta"><div class="story-product" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</div></div></div>
+    <div class="story-card reveal"><div class="story-icon">🛢️</div><div class="story-tag" data-en="Oil &amp; Gas" data-ar="النفط والغاز">Oil &amp; Gas</div><h3 class="story-title" data-en="[Project Name — Placeholder]" data-ar="[اسم المشروع — نص مؤقت]">[Project Name — Placeholder]</h3><p class="story-desc" data-en="Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details." data-ar="صف تحدي العميل وحل WRM والكميات المورّدة والنتيجة المحققة. استبدل بتفاصيل المشروع الحقيقية.">Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details.</p><div class="story-meta"><div class="story-product" data-en="Frac Sand" data-ar="رمل الفراك">Frac Sand</div></div></div>
+    <div class="story-card reveal"><div class="story-icon">🏺</div><div class="story-tag" data-en="Ceramics" data-ar="السيراميك">Ceramics</div><h3 class="story-title" data-en="[Project Name — Placeholder]" data-ar="[اسم المشروع — نص مؤقت]">[Project Name — Placeholder]</h3><p class="story-desc" data-en="Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details." data-ar="صف تحدي العميل وحل WRM والكميات المورّدة والنتيجة المحققة. استبدل بتفاصيل المشروع الحقيقية.">Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details.</p><div class="story-meta"><div class="story-product" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</div></div></div>
   </div>
 </section>
-
+<!-- CTA BANNER -->
+<section id="cta-banner">
+  <h2 class="cta-title" data-en="Ready to Work With Us?" data-ar="هل أنت مستعد للعمل معنا؟">Ready to Work With Us?</h2>
+  <p class="cta-sub" data-en="Get in touch for product specifications, pricing, or to discuss your mineral supply requirements." data-ar="تواصل معنا للحصول على مواصفات المنتج أو الأسعار أو لمناقشة متطلبات إمداد المعادن الخاصة بك.">Get in touch for product specifications, pricing, or to discuss your mineral supply requirements.</p>
+  <div class="cta-actions">
+    <a href="contact.html" class="btn-hero" data-en="Get a Quote" data-ar="طلب عرض سعر">Get a Quote</a>
+    <a href="products.html" class="btn-ghost" data-en="View Products" data-ar="عرض المنتجات">View Products</a>
+  </div>
+</section>
 
 <script src="script.js" defer></script>
-<script src="products.js" defer></script>
+<script src="index.js" defer></script>
 </body>
 </html>
