@@ -161,11 +161,11 @@ function applyLang(l) {
   document.querySelectorAll('a[href]').forEach(function (a) {
     try {
       var raw = a.getAttribute('href');
-      if (!raw || raw.startsWith('mailto') || raw.startsWith('tel') || raw.startsWith('#') || raw.startsWith('http')) return;
-      // Keep relative links relative, just add/update lang param
-      var base = raw.split('?')[0];
-      var hash = (raw.indexOf('#') > -1) ? raw.substring(raw.indexOf('#')) : '';
-      a.href = base + '?lang=' + l + hash;
+      if (!raw || raw.startsWith('mailto') || raw.startsWith('tel') || raw.startsWith('#')) return;
+      var u = new URL(raw, window.location.href);
+      if (u.origin === window.location.origin) {
+        a.href = u.pathname + '?lang=' + l + (u.hash || '');
+      }
     } catch (e) {}
   });
 }
