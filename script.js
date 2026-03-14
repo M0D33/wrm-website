@@ -32,6 +32,56 @@
   }, 1600);
 })();
 
+/* ── Footer Injection ─────────────────────────
+   Single source for footer HTML across all pages.
+   To update LinkedIn URL: change href below.
+   ─────────────────────────────────────────── */
+(function () {
+  var footer = document.createElement('footer');
+  footer.innerHTML =
+    '<div class="footer-inner">' +
+      '<div class="footer-brand">' +
+        '<div class="footer-logo-name" data-en="White Rocks Mining" data-ar="الصخور البيضاء للتعدين">White Rocks Mining</div>' +
+        '<span class="footer-logo-sub" data-en="الصخور البيضاء للتعدين" data-ar="White Rocks Mining">الصخور البيضاء للتعدين</span>' +
+        '<p class="footer-tagline"><span data-en="Pioneering " data-ar="رواد ">Pioneering </span><em data-en="mining excellence" data-ar="التميز في التعدين">mining excellence</em><span data-en=" from the heart of Saudi Arabia." data-ar=" من قلب المملكة العربية السعودية."> from the heart of Saudi Arabia.</span></p>' +
+        '<a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener" class="footer-li-btn">' +
+          '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>' +
+          '<span data-en="Follow on LinkedIn" data-ar="تابعنا على لينكدإن">Follow on LinkedIn</span>' +
+        '</a>' +
+      '</div>' +
+      '<div>' +
+        '<div class="footer-col-title" data-en="Navigate" data-ar="التنقل">Navigate</div>' +
+        '<ul class="footer-col-links">' +
+          '<li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>' +
+          '<li><a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a></li>' +
+          '<li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>' +
+          '<li><a href="team.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>' +
+          '<li><a href="clients.html" data-en="Clients" data-ar="عملاؤنا">Clients</a></li>' +
+          '<li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>' +
+        '</ul>' +
+      '</div>' +
+      '<div>' +
+        '<div class="footer-col-title" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</div>' +
+        '<ul class="footer-col-links">' +
+          '<li><a href="mailto:info@whiterocksmining.com">info@whiterocksmining.com</a></li>' +
+          '<li><a href="tel:+966XXXXXXXX">+966 XX XXX XXXX</a></li>' +
+          '<li><a href="contact.html" class="footer-locations" data-en="Dammam · SPARK · Tayma" data-ar="الدمام · SPARK · تيماء">Dammam · SPARK · Tayma</a></li>' +
+        '</ul>' +
+      '</div>' +
+    '</div>' +
+    '<div class="footer-bottom">' +
+      '<span class="footer-copy" data-en="© 2026 White Rocks Mining Company. All rights reserved." data-ar="© 2026 شركة وايت روكس للتعدين. جميع الحقوق محفوظة.">© 2026 White Rocks Mining Company. All rights reserved.</span>' +
+    '</div>';
+
+  // Replace existing footer if present, otherwise append
+  var existing = document.querySelector('footer');
+  if (existing) {
+    existing.parentNode.replaceChild(footer, existing);
+  } else {
+    document.body.appendChild(footer);
+  }
+})();
+
 var lang = new URLSearchParams(window.location.search).get('lang')
          || localStorage.getItem('wrm_lang')
          || 'en';
