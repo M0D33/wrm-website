@@ -32,6 +32,57 @@
   }, 1600);
 })();
 
+/* ── Navbar Injection ─────────────────────────
+   Single source for navbar HTML across all pages.
+   ─────────────────────────────────────────── */
+(function () {
+  var nav = document.createElement('nav');
+  nav.id = 'navbar';
+  nav.innerHTML =
+    '<div class="nav-orange-rule"></div>' +
+    '<a href="index.html" class="nav-logo">' +
+      '<img src="assets/logo-nav.png" alt="White Rocks Mining" width="149" height="44" class="logo-img"/>' +
+    '</a>' +
+    '<ul class="nav-links">' +
+      '<li><a href="index.html"    data-en="Home"     data-ar="\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629">Home</a></li>' +
+      '<li><a href="about.html"    data-en="About Us"  data-ar="\u0645\u0646 \u0646\u062d\u0646">About Us</a></li>' +
+      '<li><a href="products.html" data-en="Products"  data-ar="\u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a">Products</a></li>' +
+      '<li><a href="team.html"     data-en="Our Team"  data-ar="\u0641\u0631\u064a\u0642\u0646\u0627">Our Team</a></li>' +
+      '<li><a href="clients.html"  data-en="Clients"   data-ar="\u0639\u0645\u0644\u0627\u0624\u0646\u0627">Clients</a></li>' +
+      '<li><a href="contact.html"  data-en="Contact"   data-ar="\u0627\u062a\u0635\u0644 \u0628\u0646\u0627">Contact</a></li>' +
+    '</ul>' +
+    '<div class="nav-right">' +
+      '<button class="lang-toggle" id="langToggle">\u0639\u0631\u0628\u064a</button>' +
+      '<a href="contact.html" class="btn-nav" data-en="Get a Quote" data-ar="\u0637\u0644\u0628 \u0639\u0631\u0636 \u0633\u0639\u0631">Get a Quote</a>' +
+    '</div>' +
+    '<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>';
+
+  var mobileMenu = document.createElement('div');
+  mobileMenu.className = 'mobile-menu';
+  mobileMenu.id = 'mobileMenu';
+  mobileMenu.innerHTML =
+    '<a href="index.html"    data-en="Home"     data-ar="\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629">Home</a>' +
+    '<a href="about.html"    data-en="About Us"  data-ar="\u0645\u0646 \u0646\u062d\u0646">About Us</a>' +
+    '<a href="products.html" data-en="Products"  data-ar="\u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a">Products</a>' +
+    '<a href="team.html"     data-en="Our Team"  data-ar="\u0641\u0631\u064a\u0642\u0646\u0627">Our Team</a>' +
+    '<a href="clients.html"  data-en="Clients"   data-ar="\u0639\u0645\u0644\u0627\u0624\u0646\u0627">Clients</a>' +
+    '<a href="contact.html"  data-en="Contact"   data-ar="\u0627\u062a\u0635\u0644 \u0628\u0646\u0627">Contact</a>';
+
+  // Replace existing nav if present, otherwise prepend after loader
+  var existingNav = document.getElementById('navbar');
+  var existingMobile = document.getElementById('mobileMenu');
+  if (existingNav) {
+    existingNav.parentNode.replaceChild(nav, existingNav);
+  } else {
+    document.body.insertBefore(nav, document.body.firstChild);
+  }
+  if (existingMobile) {
+    existingMobile.parentNode.replaceChild(mobileMenu, existingMobile);
+  } else {
+    nav.insertAdjacentElement('afterend', mobileMenu);
+  }
+})();
+
 /* ── Footer Injection ─────────────────────────
    Single source for footer HTML across all pages.
    To update LinkedIn URL: change href below.
