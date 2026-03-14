@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@ -3,230 +3,126 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Us — White Rocks Mining Company</title>
 <title>White Rocks Mining Company</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -10,14 +10,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="about.css"/>
+  <link rel="stylesheet" href="index.css"/>
   <link rel="icon" type="image/x-icon" href="favicon.ico"/>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-nav.png"/>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
 </head>
 <body>
+
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo-nav.png" alt="White Rocks Mining" width="149" height="44" class="logo-img"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-en="Home"     data-ar="الرئيسية">Home</a></li>
+    <li><a href="about.html"    data-en="About Us" data-ar="من نحن">About Us</a></li>
+    <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+    <li><a href="team.html"     data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+    <li><a href="clients.html"  data-en="Clients"  data-ar="عملاؤنا">Clients</a></li>
+    <li><a href="contact.html"  data-en="Contact"  data-ar="اتصل بنا">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="lang-toggle" id="langToggle">عربي</button>
+    <a href="contact.html" class="btn-nav" data-en="Get a Quote" data-ar="طلب عرض سعر">Get a Quote</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"    data-en="Home"     data-ar="الرئيسية">Home</a>
+  <a href="about.html"    data-en="About Us" data-ar="من نحن">About Us</a>
+  <a href="products.html" data-en="Products" data-ar="المنتجات">Products</a>
+  <a href="team.html"     data-en="Our Team" data-ar="فريقنا">Our Team</a>
+  <a href="clients.html"  data-en="Clients"  data-ar="عملاؤنا">Clients</a>
+  <a href="contact.html"  data-en="Contact"  data-ar="اتصل بنا">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bar"></div><div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-accent-line"></div>
+  <div class="hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span data-en="About Us" data-ar="من نحن">About Us</span>
   <div class="hero-content">
     <div class="hero-badge"><div class="badge-dot"></div><span class="badge-text" data-en="Industrial Minerals · Est. 2022 · Saudi Arabia" data-ar="معادن صناعية · تأسست 2022 · المملكة العربية السعودية">Industrial Minerals · Est. 2022 · Saudi Arabia</span></div>
     <h1 class="hero-title"><span data-en="Precision Minerals," data-ar="معادن دقيقة،">Precision Minerals,</span><br/><span class="accent" data-en="Trusted Quality." data-ar="جودة موثوقة.">Trusted Quality.</span></h1>
@@ -26,7 +64,25 @@
       <a href="products.html" class="btn-hero" data-en="Explore Products →" data-ar="استكشف المنتجات →">Explore Products →</a>
       <a href="about.html" class="btn-ghost" data-en="Our Story" data-ar="قصتنا">Our Story</a>
     </div>
+    <h1 class="page-title"><span data-en="Who We " data-ar="من ">Who We </span><span class="accent" data-en="Are" data-ar="نحن">Are</span></h1>
+    <p class="page-desc" data-en="White Rocks Mining Company was founded in 2022 in Dammam, Saudi Arabia, with a clear purpose: to pioneer mining excellence by delivering premium industrial minerals and just-in-time logistics across the Kingdom and beyond." data-ar="تأسست شركة وايت روكس للتعدين عام 2022 في الدمام، المملكة العربية السعودية، بهدف واضح: ريادة التميز في التعدين من خلال توفير معادن صناعية متميزة ولوجستيات فورية في المملكة وخارجها.">White Rocks Mining Company was founded in 2022 in Dammam, Saudi Arabia, with a clear purpose: to pioneer mining excellence by delivering premium industrial minerals and just-in-time logistics across the Kingdom and beyond.</p>
   </div>
+</div>
+
+<!-- MISSION & VISION -->
+<section id="mission">
+  <div class="mv-grid reveal">
+    <div class="mv-card mission-card reveal">
+      <div class="mv-icon orange-bg">🎯</div>
+      <div class="mv-label orange" data-en="Our Mission" data-ar="مهمتنا">Our Mission</div>
+      <h2 class="mv-title" data-en="Pioneering Mining Excellence" data-ar="ريادة التميز في التعدين">Pioneering Mining Excellence</h2>
+      <p class="mv-text" data-en="As White Rocks Mining, we pioneer mining excellence by delivering premium white sand and offering just-in-time logistics services. We forge industry partnerships, prioritise employee well-being, and contribute to a sustainable and impactful future for Saudi Arabia. As the leading mining operator of choice in the industrial minerals market, we are committed to leading through responsible practices, fostering diversified growth, and championing environmental stewardship." data-ar="في وايت روكس للتعدين، نرسخ مفهوم التميز في قطاع التعدين من خلال توفير الرمال البيضاء الفاخرة وتقديم خدمات لوجستية فورية. نبني شراكات صناعية ونُولي الأولوية لرفاهية موظفينا ونساهم في مستقبل مستدام ومؤثر للمملكة العربية السعودية. بوصفنا المشغل التعديني الرائد في سوق المعادن الصناعية، نلتزم بالريادة من خلال الممارسات المسؤولة وتعزيز النمو المتنوع والمناصرة البيئية.">As White Rocks Mining, we pioneer mining excellence by delivering premium white sand and offering just-in-time logistics services. We forge industry partnerships, prioritise employee well-being, and contribute to a sustainable and impactful future for Saudi Arabia. As the leading mining operator of choice in the industrial minerals market, we are committed to leading through responsible practices, fostering diversified growth, and championing environmental stewardship.</p>
+    </div>
+    <div class="mv-card vision-card reveal">
+      <div class="mv-icon blue-bg">🔭</div>
+      <div class="mv-label blue" data-en="Our Vision" data-ar="رؤيتنا">Our Vision</div>
+      <h2 class="mv-title" data-en="Sustainable Practices. Long-Term Value." data-ar="ممارسات مستدامة. قيمة طويلة الأمد.">Sustainable Practices. Long-Term Value.</h2>
+      <p class="mv-text" data-en="WRM envisions spearheading the transformation of Saudi Arabia's mineral industry, setting new benchmarks for excellence. As the leading mining operator of choice in the industrial minerals market, we are committed to leading through responsible practices, fostering diversified growth, and championing environmental stewardship." data-ar="تتطلع WRM إلى قيادة تحول صناعة المعادن في المملكة العربية السعودية ووضع معايير جديدة للتميز. بوصفنا المشغل التعديني الرائد في سوق المعادن الصناعية، نلتزم بالريادة عبر الممارسات المسؤولة وتعزيز النمو المتنوع والمناصرة البيئية.">WRM envisions spearheading the transformation of Saudi Arabia's mineral industry, setting new benchmarks for excellence. As the leading mining operator of choice in the industrial minerals market, we are committed to leading through responsible practices, fostering diversified growth, and championing environmental stewardship.</p>
   <div class="hero-card-wrap">
     <div class="hero-card">
       <div class="hc-label" data-en="Core Products" data-ar="المنتجات الأساسية">Core Products</div>
@@ -38,6 +94,7 @@
     </div>
   </div>
 </section>
+
 <!-- STATS -->
 <div id="stats"><div class="stats-grid reveal">
   <div class="stat-item"><div class="stat-num"><span id="s1">0</span><span class="stat-unit">+</span></div><div class="stat-label" data-en="Years in Operation" data-ar="سنوات من الخبرة">Years in Operation</div></div>
@@ -59,6 +116,23 @@
   </div>
 </section>
 <div class="divider"></div>
+
+<!-- OUR STORY -->
+<section id="story">
+  <div class="story-grid reveal">
+    <div>
+      <div class="story-visual">🏜️</div>
+    </div>
+    <div class="story-body">
+      <div class="eyebrow" data-en="Our Story" data-ar="قصتنا">Our Story</div>
+      <h2 class="section-title" data-en="Built in Saudi Arabia, for Saudi Arabia" data-ar="بُنيت في المملكة العربية السعودية ولأجلها">Built in Saudi Arabia, for Saudi Arabia</h2>
+      <p data-en="White Rocks Mining Company was established in 2022 in Dammam, Saudi Arabia, with the ambition to become the kingdom's leading supplier of premium industrial silica minerals. From our earliest days, we invested in the right infrastructure, people, and processes to deliver on that promise." data-ar="تأسست شركة وايت روكس للتعدين عام 2022 في الدمام، المملكة العربية السعودية، بطموح أن تصبح المورد الرائد للمعادن الصناعية السيليكية المتميزة في المملكة. منذ بداياتنا الأولى، استثمرنا في البنية التحتية المناسبة والكوادر البشرية والعمليات لتحقيق هذا الوعد.">White Rocks Mining Company was established in 2022 in Dammam, Saudi Arabia, with the ambition to become the kingdom's leading supplier of premium industrial silica minerals. From our earliest days, we invested in the right infrastructure, people, and processes to deliver on that promise.</p>
+      <p data-en="By 2023, we had launched operations in Tayma, secured our first major supply contracts, achieved ISO certification, and established our in-house logistics management system. In 2024, we expanded further with the opening of our SPARK facility, broadening our reach and production capacity across the Kingdom." data-ar="بحلول عام 2023، أطلقنا عملياتنا في تيماء، وأمّنّا أولى عقود التوريد الكبرى، وحصلنا على شهادة ISO، وأسسنا نظام إدارة اللوجستيات الداخلي. وفي عام 2024، توسعنا بافتتاح منشأة SPARK، مما وسّع نطاق عملياتنا وطاقتنا الإنتاجية في المملكة.">By 2023, we had launched operations in Tayma, secured our first major supply contracts, achieved ISO certification, and established our in-house logistics management system. In 2024, we expanded further with the opening of our SPARK facility, broadening our reach and production capacity across the Kingdom.</p>
+      <p data-en="Today, WRM operates from three strategic locations across Saudi Arabia." data-ar="اليوم، تعمل WRM من ثلاثة مواقع استراتيجية في أنحاء المملكة العربية السعودية.">Today, WRM operates from three strategic locations across Saudi Arabia.</p>
+      <div class="branch-pills">
+        <span class="branch-pill" data-en="Dammam HQ" data-ar="المقر الرئيسي — الدمام">Dammam HQ</span>
+        <span class="branch-pill" data-en="SPARK Facility" data-ar="منشأة SPARK">SPARK Facility</span>
+        <span class="branch-pill" data-en="Tayma Operations" data-ar="عمليات تيماء">Tayma Operations</span>
 <!-- ABOUT PREVIEW -->
 <section id="about-preview">
   <div class="about-grid">
@@ -76,6 +150,36 @@
     </div>
   </div>
 </section>
+
+<div class="divider"></div>
+
+<!-- VALUES -->
+<section id="values">
+  <div style="text-align:center;margin-bottom:52px;">
+    <div class="eyebrow" style="justify-content:center;" data-en="What Drives Us" data-ar="ما يدفعنا">What Drives Us</div>
+    <h2 class="section-title" data-en="Our Core Values" data-ar="قيمنا الجوهرية">Our Core Values</h2>
+  </div>
+  <div class="values-grid reveal">
+    <div class="val-card reveal">
+      <div class="val-icon">✅</div>
+      <h3 class="val-title" data-en="Uncompromising Quality" data-ar="جودة لا تساوم">Uncompromising Quality</h3>
+      <p class="val-desc" data-en="Every tonne of product we deliver is tested against international purity and consistency standards. Quality is not a checkpoint — it is embedded in every stage of our process." data-ar="كل طن من المنتج الذي نورده يُختبر وفق معايير النقاء والاتساق الدولية. الجودة ليست مجرد نقطة تفتيش — بل هي متجذرة في كل مرحلة من مراحل عمليتنا.">Every tonne of product we deliver is tested against international purity and consistency standards. Quality is not a checkpoint — it is embedded in every stage of our process.</p>
+    </div>
+    <div class="val-card reveal">
+      <div class="val-icon">🚛</div>
+      <h3 class="val-title" data-en="Just-in-Time Logistics" data-ar="لوجستيات فورية">Just-in-Time Logistics</h3>
+      <p class="val-desc" data-en="Our proprietary in-house logistics management system ensures on-time delivery, shipment traceability, and operational efficiency across all three of our sites." data-ar="نظام إدارة اللوجستيات الداخلي الخاص بنا يضمن التسليم في الوقت المحدد وتتبع الشحنات والكفاءة التشغيلية عبر مواقعنا الثلاثة.">Our proprietary in-house logistics management system ensures on-time delivery, shipment traceability, and operational efficiency across all three of our sites.</p>
+    </div>
+    <div class="val-card reveal">
+      <div class="val-icon">🤝</div>
+      <h3 class="val-title" data-en="People First" data-ar="الناس أولاً">People First</h3>
+      <p class="val-desc" data-en="We believe that our people are our greatest asset. We invest in their safety, development, and well-being — creating a workplace where excellence is a natural outcome." data-ar="نؤمن بأن موظفينا هم أعظم أصولنا. نستثمر في سلامتهم وتطويرهم ورفاهيتهم — نخلق بيئة عمل يكون فيها التميز نتيجة طبيعية.">We believe that our people are our greatest asset. We invest in their safety, development, and well-being — creating a workplace where excellence is a natural outcome.</p>
+    </div>
+    <div class="val-card reveal">
+      <div class="val-icon">🌱</div>
+      <h3 class="val-title" data-en="Environmental Stewardship" data-ar="الإشراف البيئي">Environmental Stewardship</h3>
+      <p class="val-desc" data-en="We are committed to responsible extraction practices, minimising our environmental footprint, and contributing to a sustainable future for the communities and landscapes we operate within." data-ar="نلتزم بممارسات استخراج مسؤولة وتقليل بصمتنا البيئية والمساهمة في مستقبل مستدام للمجتمعات والمناطق التي نعمل فيها.">We are committed to responsible extraction practices, minimising our environmental footprint, and contributing to a sustainable future for the communities and landscapes we operate within.</p>
+    </div>
 <!-- CLIENTS MARQUEE -->
 <section id="clients-section">
   <div class="section-hd reveal" style="text-align:center;">
@@ -86,7 +190,14 @@
   <div class="marquee-wrap reveal"><div class="marquee-track" id="mTrack"></div></div>
   <div style="text-align:center;margin-top:34px;" class="reveal"><a href="clients.html" class="btn-solid" data-en="Meet Our Clients" data-ar="تعرف على عملائنا">Meet Our Clients</a></div>
 </section>
+
 <div class="divider"></div>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div style="margin-bottom:52px;">
+    <div class="eyebrow" data-en="Our Journey" data-ar="مسيرتنا">Our Journey</div>
+    <h2 class="section-title" data-en="Key Milestones" data-ar="أبرز المحطات">Key Milestones</h2>
 <!-- TEAM PREVIEW -->
 <section id="team-section">
   <div class="section-hd reveal" style="text-align:center;">
@@ -94,11 +205,74 @@
     <h2 class="section-title" data-en="Meet Our Team" data-ar="تعرف على فريقنا">Meet Our Team</h2>
     <p class="section-sub" style="margin:0 auto;" data-en="Industry experts united by a shared commitment to quality, safety, and client success." data-ar="خبراء صناعيون متحدون بالتزام مشترك بالجودة والسلامة ونجاح العميل.">Industry experts united by a shared commitment to quality, safety, and client success.</p>
   </div>
+  <div class="timeline-wrap reveal">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2022</div>
+      <div class="tl-content">
+        <div class="tl-title" data-en="Company Founded" data-ar="تأسيس الشركة">Company Founded</div>
+        <div class="tl-desc" data-en="White Rocks Mining Company established in Dammam, Saudi Arabia, with a vision to become the kingdom's leading industrial minerals supplier." data-ar="تأسست شركة وايت روكس للتعدين في الدمام، المملكة العربية السعودية، برؤية لتصبح المورد الرائد للمعادن الصناعية في المملكة.">White Rocks Mining Company established in Dammam, Saudi Arabia, with a vision to become the kingdom's leading industrial minerals supplier.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2023</div>
+      <div class="tl-content">
+        <div class="tl-title" data-en="First Major Supply Contract Secured" data-ar="تأمين أول عقد توريد كبير">First Major Supply Contract Secured</div>
+        <div class="tl-desc" data-en="WRM secured its first major long-term supply agreement, validating our product quality and operational reliability in the market." data-ar="أمّنت WRM أول اتفاقية توريد طويلة الأمد كبرى، مما يثبت جودة منتجاتنا وموثوقيتنا التشغيلية في السوق.">WRM secured its first major long-term supply agreement, validating our product quality and operational reliability in the market.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2023</div>
+      <div class="tl-content">
+        <div class="tl-title" data-en="Tayma Operations Launched" data-ar="انطلاق عمليات تيماء">Tayma Operations Launched</div>
+        <div class="tl-desc" data-en="Established our Tayma extraction and processing site, significantly expanding WRM's production capacity and access to premium silica deposits." data-ar="أسسنا موقع الاستخراج والمعالجة في تيماء، مما وسّع بشكل كبير طاقة WRM الإنتاجية والوصول إلى رواسب السيليكا المتميزة.">Established our Tayma extraction and processing site, significantly expanding WRM's production capacity and access to premium silica deposits.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2023</div>
+      <div class="tl-content">
+        <div class="tl-title" data-en="ISO Certification Achieved" data-ar="الحصول على شهادة ISO">ISO Certification Achieved</div>
+        <div class="tl-desc" data-en="Achieved ISO certification, formally validating WRM's quality management systems, operational consistency, and commitment to international standards." data-ar="حصلنا على شهادة ISO، مما يُثبت رسمياً أنظمة إدارة الجودة لدى WRM والاتساق التشغيلي والالتزام بالمعايير الدولية.">Achieved ISO certification, formally validating WRM's quality management systems, operational consistency, and commitment to international standards.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2023</div>
+      <div class="tl-content">
+        <div class="tl-title" data-en="In-House Logistics System Established" data-ar="إنشاء نظام اللوجستيات الداخلي">In-House Logistics System Established</div>
+        <div class="tl-desc" data-en="Launched our proprietary logistics management platform, enabling real-time shipment tracking, just-in-time delivery, and optimised fleet operations." data-ar="أطلقنا منصة إدارة اللوجستيات الداخلية الخاصة بنا، مما يتيح تتبع الشحنات في الوقت الفعلي والتسليم الفوري وتحسين عمليات الأسطول.">Launched our proprietary logistics management platform, enabling real-time shipment tracking, just-in-time delivery, and optimised fleet operations.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2024</div>
+      <div class="tl-content">
+        <div class="tl-title" data-en="SPARK Facility Established" data-ar="إنشاء منشأة SPARK">SPARK Facility Established</div>
+        <div class="tl-desc" data-en="Opened our SPARK facility, further expanding WRM's geographic footprint, storage capacity, and distribution capabilities across the Kingdom." data-ar="افتتحنا منشأة SPARK، مما وسّع نطاق WRM الجغرافي وطاقة التخزين وقدرات التوزيع في أنحاء المملكة.">Opened our SPARK facility, further expanding WRM's geographic footprint, storage capacity, and distribution capabilities across the Kingdom.</div>
+      </div>
+    </div>
   <div class="team-grid" id="homeTeamGrid">
     <!-- Populated by index.js from data/team.json -->
   </div>
   <div style="text-align:center;margin-top:38px;" class="reveal"><a href="team.html" class="btn-solid" data-en="View Full Team" data-ar="عرض الفريق الكامل">View Full Team</a></div>
 </section>
+
+<div class="divider"></div>
+
+<!-- PARTNERS -->
+<section id="partners">
+  <div class="partners-intro reveal">
+    <div>
+      <div class="eyebrow" data-en="Strong Partnerships. Shared Success." data-ar="شراكات قوية. نجاح مشترك.">Strong Partnerships. Shared Success.</div>
+      <h2 class="section-title" data-en="Our Partners" data-ar="شركاؤنا">Our Partners</h2>
+    </div>
+    <div class="partners-intro-text">
+      <p data-en="At White Rocks Mining, we believe that strong, strategic partnerships are the cornerstone of sustainable industry growth. We collaborate with a diverse network of clients, contractors, and logistics partners who share our values of quality, innovation, and responsibility." data-ar="في وايت روكس للتعدين، نؤمن بأن الشراكات الاستراتيجية القوية هي ركيزة النمو الصناعي المستدام. نتعاون مع شبكة متنوعة من العملاء والمقاولين وشركاء اللوجستيات الذين يشاركوننا قيم الجودة والابتكار والمسؤولية.">At White Rocks Mining, we believe that strong, strategic partnerships are the cornerstone of sustainable industry growth. We collaborate with a diverse network of clients, contractors, and logistics partners who share our values of quality, innovation, and responsibility.</p>
+      <p data-en="Our partnerships are built on transparency, mutual respect, and long-term thinking — ensuring that every relationship we build delivers genuine shared value." data-ar="شراكاتنا مبنية على الشفافية والاحترام المتبادل والتفكير طويل المدى — لضمان أن كل علاقة نبنيها تحقق قيمة مشتركة حقيقية.">Our partnerships are built on transparency, mutual respect, and long-term thinking — ensuring that every relationship we build delivers genuine shared value.</p>
+    </div>
 <!-- SUCCESS STORIES -->
 <section id="success-section">
   <div class="section-hd reveal">
@@ -106,22 +280,35 @@
     <h2 class="section-title" data-en="Projects We're Proud Of" data-ar="مشاريع نفخر بها">Projects We're Proud Of</h2>
     <p class="section-sub" data-en="Placeholder stories — replace with real completed project highlights." data-ar="قصص مؤقتة — استبدلها بأبرز المشاريع المنجزة الفعلية.">Placeholder stories — replace with real completed project highlights.</p>
   </div>
+  <div class="partners-grid reveal">
+    <div class="partner-card" data-en="Partner Name — Placeholder" data-ar="اسم الشريك — نص مؤقت">Partner Name — Placeholder</div>
+    <div class="partner-card" data-en="Partner Name — Placeholder" data-ar="اسم الشريك — نص مؤقت">Partner Name — Placeholder</div>
+    <div class="partner-card" data-en="Partner Name — Placeholder" data-ar="اسم الشريك — نص مؤقت">Partner Name — Placeholder</div>
+    <div class="partner-card" data-en="Partner Name — Placeholder" data-ar="اسم الشريك — نص مؤقت">Partner Name — Placeholder</div>
+    <div class="partner-card" data-en="Partner Name — Placeholder" data-ar="اسم الشريك — نص مؤقت">Partner Name — Placeholder</div>
+    <div class="partner-card" data-en="Partner Name — Placeholder" data-ar="اسم الشريك — نص مؤقت">Partner Name — Placeholder</div>
   <div class="stories-grid">
     <div class="story-card reveal"><div class="story-icon">🏗️</div><div class="story-tag" data-en="Construction" data-ar="البناء">Construction</div><h3 class="story-title" data-en="[Project Name — Placeholder]" data-ar="[اسم المشروع — نص مؤقت]">[Project Name — Placeholder]</h3><p class="story-desc" data-en="Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details." data-ar="صف تحدي العميل وحل WRM والكميات المورّدة والنتيجة المحققة. استبدل بتفاصيل المشروع الحقيقية.">Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details.</p><div class="story-meta"><div class="story-product" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</div></div></div>
     <div class="story-card reveal"><div class="story-icon">🛢️</div><div class="story-tag" data-en="Oil &amp; Gas" data-ar="النفط والغاز">Oil &amp; Gas</div><h3 class="story-title" data-en="[Project Name — Placeholder]" data-ar="[اسم المشروع — نص مؤقت]">[Project Name — Placeholder]</h3><p class="story-desc" data-en="Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details." data-ar="صف تحدي العميل وحل WRM والكميات المورّدة والنتيجة المحققة. استبدل بتفاصيل المشروع الحقيقية.">Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details.</p><div class="story-meta"><div class="story-product" data-en="Frac Sand" data-ar="رمل الفراك">Frac Sand</div></div></div>
     <div class="story-card reveal"><div class="story-icon">🏺</div><div class="story-tag" data-en="Ceramics" data-ar="السيراميك">Ceramics</div><h3 class="story-title" data-en="[Project Name — Placeholder]" data-ar="[اسم المشروع — نص مؤقت]">[Project Name — Placeholder]</h3><p class="story-desc" data-en="Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details." data-ar="صف تحدي العميل وحل WRM والكميات المورّدة والنتيجة المحققة. استبدل بتفاصيل المشروع الحقيقية.">Describe the client challenge, WRM's solution, quantities supplied, and the outcome. Replace with real project details.</p><div class="story-meta"><div class="story-product" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</div></div></div>
   </div>
 </section>
+
 <!-- CTA BANNER -->
 <section id="cta-banner">
   <h2 class="cta-title" data-en="Ready to Work With Us?" data-ar="هل أنت مستعد للعمل معنا؟">Ready to Work With Us?</h2>
+  <p class="cta-sub" data-en="Get in touch to discuss product requirements, partnership opportunities, or to request a quote." data-ar="تواصل معنا لمناقشة متطلبات المنتج أو فرص الشراكة أو لطلب عرض سعر.">Get in touch to discuss product requirements, partnership opportunities, or to request a quote.</p>
   <p class="cta-sub" data-en="Get in touch for product specifications, pricing, or to discuss your mineral supply requirements." data-ar="تواصل معنا للحصول على مواصفات المنتج أو الأسعار أو لمناقشة متطلبات إمداد المعادن الخاصة بك.">Get in touch for product specifications, pricing, or to discuss your mineral supply requirements.</p>
   <div class="cta-actions">
+    <a href="contact.html" class="btn-hero"     data-en="Get a Quote"   data-ar="طلب عرض سعر">Get a Quote</a>
+    <a href="products.html" class="btn-hero-out" data-en="View Products" data-ar="عرض المنتجات">View Products</a>
     <a href="contact.html" class="btn-hero" data-en="Get a Quote" data-ar="طلب عرض سعر">Get a Quote</a>
     <a href="products.html" class="btn-ghost" data-en="View Products" data-ar="عرض المنتجات">View Products</a>
   </div>
 </section>
 
+
 <script src="script.js" defer></script>
+<script src="index.js" defer></script>
 </body>
 </html>

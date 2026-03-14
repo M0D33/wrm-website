@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@ -3,102 +3,126 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Our Team — White Rocks Mining</title>
 <title>White Rocks Mining Company</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -10,14 +10,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="team.css"/>
+  <link rel="stylesheet" href="index.css"/>
   <link rel="icon" type="image/x-icon" href="favicon.ico"/>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-nav.png"/>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
 </head>
 <body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo-nav.png" alt="White Rocks Mining" width="149" height="44" class="logo-img"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-en="Home"     data-ar="الرئيسية">Home</a></li>
+    <li><a href="about.html"    data-en="About Us" data-ar="من نحن">About Us</a></li>
+    <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+    <li><a href="team.html"     data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+    <li><a href="clients.html"  data-en="Clients"  data-ar="عملاؤنا">Clients</a></li>
+    <li><a href="contact.html"  data-en="Contact"  data-ar="اتصل بنا">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="lang-toggle" id="langToggle">عربي</button>
+    <a href="contact.html" class="btn-nav" data-en="Get a Quote" data-ar="طلب عرض سعر">Get a Quote</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"    data-en="Home"     data-ar="الرئيسية">Home</a>
+  <a href="about.html"    data-en="About Us" data-ar="من نحن">About Us</a>
+  <a href="products.html" data-en="Products" data-ar="المنتجات">Products</a>
+  <a href="team.html"     data-en="Our Team" data-ar="فريقنا">Our Team</a>
+  <a href="clients.html"  data-en="Clients"  data-ar="عملاؤنا">Clients</a>
+  <a href="contact.html"  data-en="Contact"  data-ar="اتصل بنا">Contact</a>
+</div>
+
+<div class="page-hero">
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bar"></div><div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-accent-line"></div>
+  <div class="hero-inner">
+    <div class="breadcrumb"><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a><span class="breadcrumb-sep">/</span><span data-en="Our Team" data-ar="فريقنا">Our Team</span></div>
+    <h1 class="page-title"><span data-en="The People Behind " data-ar="الأشخاص وراء ">The People Behind </span><span class="accent">WRM</span></h1>
+    <p class="page-desc" data-en="Our leadership team brings deep expertise across mining operations, commercial strategy, finance, and logistics — united by a shared commitment to excellence and long-term value for our clients." data-ar="يجمع فريق القيادة لدينا خبرة عميقة في عمليات التعدين والاستراتيجية التجارية والمالية واللوجستيات — متحدين بالتزام مشترك بالتميز وتحقيق قيمة طويلة الأمد لعملائنا.">Our leadership team brings deep expertise across mining operations, commercial strategy, finance, and logistics — united by a shared commitment to excellence and long-term value for our clients.</p>
+  </div>
+</div>
+
+<section id="team-section">
+  <div style="margin-bottom:48px;" class="reveal">
+    <div class="eyebrow" data-en="Leadership Team" data-ar="فريق القيادة">Leadership Team</div>
+    <h2 class="section-title" data-en="Meet the Team" data-ar="تعرف على الفريق">Meet the Team</h2>
   <div class="hero-content">
     <div class="hero-badge"><div class="badge-dot"></div><span class="badge-text" data-en="Industrial Minerals · Est. 2022 · Saudi Arabia" data-ar="معادن صناعية · تأسست 2022 · المملكة العربية السعودية">Industrial Minerals · Est. 2022 · Saudi Arabia</span></div>
     <h1 class="hero-title"><span data-en="Precision Minerals," data-ar="معادن دقيقة،">Precision Minerals,</span><br/><span class="accent" data-en="Trusted Quality." data-ar="جودة موثوقة.">Trusted Quality.</span></h1>
@@ -27,6 +68,8 @@
       <a href="about.html" class="btn-ghost" data-en="Our Story" data-ar="قصتنا">Our Story</a>
     </div>
   </div>
+  <div class="team-grid" id="teamGrid">
+    <div class="loading-state" data-en="Loading team..." data-ar="جاري التحميل...">Loading team...</div>
   <div class="hero-card-wrap">
     <div class="hero-card">
       <div class="hc-label" data-en="Core Products" data-ar="المنتجات الأساسية">Core Products</div>
@@ -38,6 +81,13 @@
     </div>
   </div>
 </section>
+
+<div class="divider"></div>
+
+<section id="culture">
+  <div style="position:relative;z-index:1;" class="reveal">
+    <div class="eyebrow" data-en="Our Culture" data-ar="ثقافتنا">Our Culture</div>
+    <h2 class="section-title" data-en="What It Means to Work at WRM" data-ar="ماذا يعني العمل في WRM">What It Means to Work at WRM</h2>
 <!-- STATS -->
 <div id="stats"><div class="stats-grid reveal">
   <div class="stat-item"><div class="stat-num"><span id="s1">0</span><span class="stat-unit">+</span></div><div class="stat-label" data-en="Years in Operation" data-ar="سنوات من الخبرة">Years in Operation</div></div>
@@ -52,18 +102,36 @@
     <h2 class="section-title" data-en="Our Industrial Minerals" data-ar="معادننا الصناعية">Our Industrial Minerals</h2>
     <p class="section-sub" data-en="Premium silica minerals extracted and processed to exact industry specifications — with full chemical and physical analysis for every product." data-ar="معادن سيليكا متميزة مستخرجة ومعالجة وفق مواصفات صناعية دقيقة مع تحليل كيميائي وفيزيائي كامل لكل منتج.">Premium silica minerals extracted and processed to exact industry specifications — with full chemical and physical analysis for every product.</p>
   </div>
+  <div class="culture-grid">
+    <div class="culture-card reveal"><div class="culture-icon">🏆</div><div class="culture-title" data-en="Excellence" data-ar="التميز">Excellence</div><div class="culture-desc" data-en="We hold ourselves to the highest standards in everything we do — from how we process our minerals to how we treat our clients and colleagues." data-ar="نلتزم بأعلى المعايير في كل ما نقوم به — من معالجة معادننا إلى تعاملنا مع عملائنا وزملائنا.">We hold ourselves to the highest standards in everything we do.</div></div>
+    <div class="culture-card reveal"><div class="culture-icon">🤝</div><div class="culture-title" data-en="Integrity" data-ar="النزاهة">Integrity</div><div class="culture-desc" data-en="Trust is the foundation of everything we build — with our clients, our partners, and within our own teams." data-ar="الثقة هي أساس كل ما نبنيه — مع عملائنا وشركائنا وداخل فرقنا.">Trust is the foundation of everything we build.</div></div>
+    <div class="culture-card reveal"><div class="culture-icon">💡</div><div class="culture-title" data-en="Innovation" data-ar="الابتكار">Innovation</div><div class="culture-desc" data-en="From our proprietary logistics platform to our in-house lab testing, we continuously look for smarter ways to serve our clients." data-ar="من منصة اللوجستيات الخاصة بنا إلى الاختبارات المعملية الداخلية، نبحث باستمرار عن طرق أذكى لخدمة عملائنا.">We continuously look for smarter ways to serve our clients.</div></div>
+    <div class="culture-card reveal"><div class="culture-icon">🌱</div><div class="culture-title" data-en="Sustainability" data-ar="الاستدامة">Sustainability</div><div class="culture-desc" data-en="We are committed to responsible practices that protect the environment and ensure WRM's long-term contribution to Saudi Arabia." data-ar="نلتزم بممارسات مسؤولة تحمي البيئة وتضمن مساهمة WRM طويلة الأمد في المملكة العربية السعودية.">We are committed to responsible, sustainable practices.</div></div>
   <div class="products-grid">
     <a href="products.html#silica-sand" class="prod-card reveal"><div class="prod-body"><div class="prod-pill" data-en="Industrial Mineral" data-ar="معدن صناعي">Industrial Mineral</div><h3 class="prod-name" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</h3><p class="prod-desc" data-en="High-purity silica for glass manufacturing, construction, water filtration, foundry, and abrasive applications." data-ar="سيليكا عالية النقاء لصناعة الزجاج والبناء وتصفية المياه والمسابك والتطبيقات الكاشطة.">High-purity silica for glass manufacturing, construction, water filtration, foundry, and abrasive applications.</p><div class="prod-link" data-en="View Full Specs →" data-ar="عرض المواصفات الكاملة →">View Full Specs →</div></div><div class="prod-card-ghost">01</div></a>
     <a href="products.html#silica-flour" class="prod-card reveal"><div class="prod-body"><div class="prod-pill" data-en="Industrial Mineral" data-ar="معدن صناعي">Industrial Mineral</div><h3 class="prod-name" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</h3><p class="prod-desc" data-en="Ultra-fine milled silica for oilfield cementing, ceramics, paints, coatings, and specialty chemicals." data-ar="سيليكا مطحونة ناعمة جداً لتسمنت آبار النفط والسيراميك والدهانات والطلاءات والمواد الكيميائية المتخصصة.">Ultra-fine milled silica for oilfield cementing, ceramics, paints, coatings, and specialty chemicals.</p><div class="prod-link" data-en="View Full Specs →" data-ar="عرض المواصفات الكاملة →">View Full Specs →</div></div><div class="prod-card-ghost">02</div></a>
     <a href="products.html#frac-sand" class="prod-card reveal"><div class="prod-body"><div class="prod-pill" data-en="Industrial Mineral" data-ar="معدن صناعي">Industrial Mineral</div><h3 class="prod-name" data-en="Frac Sand" data-ar="رمل الفراك">Frac Sand</h3><p class="prod-desc" data-en="High-strength round-grain proppant for hydraulic fracturing. Tested to API/ISO 13503-2 standards." data-ar="دعامة حبيبات مستديرة عالية المقاومة للكسر الهيدروليكي. مختبرة وفق معايير API/ISO 13503-2.">High-strength round-grain proppant for hydraulic fracturing. Tested to API/ISO 13503-2 standards.</p><div class="prod-link" data-en="View Full Specs →" data-ar="عرض المواصفات الكاملة →">View Full Specs →</div></div><div class="prod-card-ghost">03</div></a>
   </div>
 </section>
+
 <div class="divider"></div>
+
+<section id="join">
+  <div class="join-grid">
+    <div class="join-visual reveal">🏗️</div>
 <!-- ABOUT PREVIEW -->
 <section id="about-preview">
   <div class="about-grid">
     <div class="about-wrap reveal"><div class="about-visual">🏜️</div><div class="about-badge"><span class="ab-num">2022</span><span class="ab-lbl" data-en="Est. Saudi Arabia" data-ar="تأسست في السعودية">Est. Saudi Arabia</span></div></div>
     <div class="reveal">
+      <div class="eyebrow" data-en="Join Our Team" data-ar="انضم إلى فريقنا">Join Our Team</div>
+      <h2 class="section-title" data-en="Build Your Career at WRM" data-ar="ابنِ مسيرتك المهنية في WRM">Build Your Career at WRM</h2>
+      <p data-en="We are always looking for talented, driven professionals who want to make a real impact in Saudi Arabia's industrial minerals sector." data-ar="نبحث دائماً عن محترفين موهوبين وطموحين يرغبون في إحداث تأثير حقيقي في قطاع المعادن الصناعية بالمملكة العربية السعودية.">We are always looking for talented, driven professionals who want to make a real impact in Saudi Arabia's industrial minerals sector.</p>
+      <div class="join-perks">
+        <div class="join-perk"><div class="perk-dot"></div><span data-en="Competitive compensation and benefits" data-ar="تعويضات ومزايا تنافسية">Competitive compensation and benefits</span></div>
+        <div class="join-perk"><div class="perk-dot"></div><span data-en="Opportunities to grow with a fast-moving company" data-ar="فرص للنمو مع شركة سريعة التطور">Opportunities to grow with a fast-moving company</span></div>
+        <div class="join-perk"><div class="perk-dot"></div><span data-en="A culture that values people and performance" data-ar="ثقافة تُقدّر الناس والأداء">A culture that values people and performance</span></div>
+        <div class="join-perk"><div class="perk-dot"></div><span data-en="Work across multiple sites in Saudi Arabia" data-ar="العمل عبر مواقع متعددة في المملكة">Work across multiple sites in Saudi Arabia</span></div>
       <div class="eyebrow" data-en="Who We Are" data-ar="من نحن">Who We Are</div>
       <h2 class="section-title" data-en="Pioneering Mining Excellence" data-ar="رواد التميز في التعدين">Pioneering Mining Excellence</h2>
       <p class="section-sub" data-en="As White Rocks Mining, we pioneer mining excellence by delivering premium white sand and offering just-in-time logistics services. We forge industry partnerships, prioritise employee well-being, and contribute to a sustainable and impactful future for Saudi Arabia." data-ar="في وايت روكس للتعدين، نرسخ مفهوم التميز في التعدين من خلال توفير الرمال البيضاء الفاخرة وتقديم خدمات لوجستية فورية. نبني شراكات صناعية ونُولي الأولوية لرفاهية موظفينا ونساهم في مستقبل مستدام للمملكة العربية السعودية.">As White Rocks Mining, we pioneer mining excellence by delivering premium white sand and offering just-in-time logistics services. We forge industry partnerships, prioritise employee well-being, and contribute to a sustainable and impactful future for Saudi Arabia.</p>
@@ -72,10 +140,12 @@
         <div class="val-item"><div class="val-icon">🚛</div><div><div class="val-title" data-en="In-House Logistics System" data-ar="نظام اللوجستيات الداخلي">In-House Logistics System</div><div class="val-desc" data-en="Our proprietary logistics platform ensures just-in-time delivery across all branches." data-ar="منصة اللوجستيات الخاصة لدينا تضمن التسليم في الوقت المحدد عبر جميع الفروع.">Our proprietary logistics platform ensures just-in-time delivery across all branches.</div></div></div>
         <div class="val-item"><div class="val-icon">🌱</div><div><div class="val-title" data-en="Environmental Stewardship" data-ar="الإشراف البيئي">Environmental Stewardship</div><div class="val-desc" data-en="Responsible extraction practices and a commitment to sustainable operations at every site." data-ar="ممارسات استخراج مسؤولة والتزام بعمليات مستدامة في كل موقع.">Responsible extraction practices and a commitment to sustainable operations at every site.</div></div></div>
       </div>
+      <a href="contact.html" class="btn-solid" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</a>
       <a href="about.html" class="btn-solid" style="margin-top:28px;" data-en="Learn More About Us" data-ar="اعرف المزيد عنا">Learn More About Us</a>
     </div>
   </div>
 </section>
+
 <!-- CLIENTS MARQUEE -->
 <section id="clients-section">
   <div class="section-hd reveal" style="text-align:center;">
@@ -124,5 +194,6 @@
 
 <script src="script.js" defer></script>
 <script src="team.js" defer></script>
+<script src="index.js" defer></script>
 </body>
 </html>

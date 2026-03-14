@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@ -3,100 +3,126 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Clients — White Rocks Mining</title>
 <title>White Rocks Mining Company</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -10,14 +10,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="clients.css"/>
+  <link rel="stylesheet" href="index.css"/>
   <link rel="icon" type="image/x-icon" href="favicon.ico"/>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-nav.png"/>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
 </head>
 <body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo-nav.png" alt="White Rocks Mining" width="149" height="44" class="logo-img"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-en="Home"     data-ar="الرئيسية">Home</a></li>
+    <li><a href="about.html"    data-en="About Us" data-ar="من نحن">About Us</a></li>
+    <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+    <li><a href="team.html"     data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+    <li><a href="clients.html"  data-en="Clients" data-ar="عملاؤنا">Clients</a></li>
+    <li><a href="contact.html"  data-en="Contact"  data-ar="اتصل بنا">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="lang-toggle" id="langToggle">عربي</button>
+    <a href="contact.html" class="btn-nav" data-en="Get a Quote" data-ar="طلب عرض سعر">Get a Quote</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"    data-en="Home"     data-ar="الرئيسية">Home</a>
+  <a href="about.html"    data-en="About Us" data-ar="من نحن">About Us</a>
+  <a href="products.html" data-en="Products" data-ar="المنتجات">Products</a>
+  <a href="team.html"     data-en="Our Team" data-ar="فريقنا">Our Team</a>
+  <a href="clients.html"  data-en="Clients"  data-ar="عملاؤنا">Clients</a>
+  <a href="contact.html"  data-en="Contact"  data-ar="اتصل بنا">Contact</a>
+</div>
+
+<div class="page-hero">
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bar"></div><div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-accent-line"></div>
+  <div class="hero-inner">
+    <div class="breadcrumb"><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a><span class="breadcrumb-sep">/</span><span data-en="Clients" data-ar="عملاؤنا">Clients</span></div>
+    <h1 class="page-title"><span data-en="Trusted by " data-ar="يثق بنا ">Trusted by </span><span class="accent" data-en="Industry Leaders" data-ar="قادة الصناعة">Industry Leaders</span></h1>
+    <p class="page-desc" data-en="From glass manufacturers and oilfield operators to construction and specialty chemicals companies — WRM is a trusted supply partner across the GCC's most demanding industries." data-ar="من مصنّعي الزجاج ومشغّلي حقول النفط إلى شركات البناء والمواد الكيميائية المتخصصة — تُعدّ WRM شريك توريد موثوقاً به عبر أكثر صناعات منطقة الخليج تطلباً.">From glass manufacturers and oilfield operators to construction and specialty chemicals companies — WRM is a trusted supply partner across the GCC's most demanding industries.</p>
   <div class="hero-content">
     <div class="hero-badge"><div class="badge-dot"></div><span class="badge-text" data-en="Industrial Minerals · Est. 2022 · Saudi Arabia" data-ar="معادن صناعية · تأسست 2022 · المملكة العربية السعودية">Industrial Minerals · Est. 2022 · Saudi Arabia</span></div>
     <h1 class="hero-title"><span data-en="Precision Minerals," data-ar="معادن دقيقة،">Precision Minerals,</span><br/><span class="accent" data-en="Trusted Quality." data-ar="جودة موثوقة.">Trusted Quality.</span></h1>
@@ -27,6 +61,14 @@
       <a href="about.html" class="btn-ghost" data-en="Our Story" data-ar="قصتنا">Our Story</a>
     </div>
   </div>
+</div>
+
+<!-- CLIENTS -->
+<section id="clients-grid">
+  <div class="reveal">
+    <div class="eyebrow" data-en="Our Clients" data-ar="عملاؤنا">Our Clients</div>
+    <h2 class="section-title" data-en="Companies We Work With" data-ar="الشركات التي نعمل معها">Companies We Work With</h2>
+    <p class="section-sub" data-en="A trusted network of industry-leading companies across oil & gas, glass manufacturing, and construction." data-ar="شبكة موثوقة من الشركات الرائدة في صناعة النفط والغاز وتصنيع الزجاج والبناء.">A trusted network of industry-leading companies across oil & gas, glass manufacturing, and construction.</p>
   <div class="hero-card-wrap">
     <div class="hero-card">
       <div class="hc-label" data-en="Core Products" data-ar="المنتجات الأساسية">Core Products</div>
@@ -37,6 +79,11 @@
       </div>
     </div>
   </div>
+  <div class="filter-bar reveal" id="filterBar">
+    <button class="filter-btn active" data-filter="all"         data-en="All"          data-ar="الكل">All</button>
+    <button class="filter-btn"        data-filter="oil"         data-en="Oil &amp; Gas" data-ar="النفط والغاز">Oil &amp; Gas</button>
+    <button class="filter-btn"        data-filter="glass"       data-en="Glass"         data-ar="الزجاج">Glass</button>
+    <button class="filter-btn"        data-filter="construction" data-en="Construction" data-ar="البناء">Construction</button>
 </section>
 <!-- STATS -->
 <div id="stats"><div class="stats-grid reveal">
@@ -52,13 +99,22 @@
     <h2 class="section-title" data-en="Our Industrial Minerals" data-ar="معادننا الصناعية">Our Industrial Minerals</h2>
     <p class="section-sub" data-en="Premium silica minerals extracted and processed to exact industry specifications — with full chemical and physical analysis for every product." data-ar="معادن سيليكا متميزة مستخرجة ومعالجة وفق مواصفات صناعية دقيقة مع تحليل كيميائي وفيزيائي كامل لكل منتج.">Premium silica minerals extracted and processed to exact industry specifications — with full chemical and physical analysis for every product.</p>
   </div>
+  <div class="clients-grid reveal" id="clientsGrid">
+    <div class="loading-state" data-en="Loading clients..." data-ar="جاري التحميل...">Loading clients...</div>
   <div class="products-grid">
     <a href="products.html#silica-sand" class="prod-card reveal"><div class="prod-body"><div class="prod-pill" data-en="Industrial Mineral" data-ar="معدن صناعي">Industrial Mineral</div><h3 class="prod-name" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</h3><p class="prod-desc" data-en="High-purity silica for glass manufacturing, construction, water filtration, foundry, and abrasive applications." data-ar="سيليكا عالية النقاء لصناعة الزجاج والبناء وتصفية المياه والمسابك والتطبيقات الكاشطة.">High-purity silica for glass manufacturing, construction, water filtration, foundry, and abrasive applications.</p><div class="prod-link" data-en="View Full Specs →" data-ar="عرض المواصفات الكاملة →">View Full Specs →</div></div><div class="prod-card-ghost">01</div></a>
     <a href="products.html#silica-flour" class="prod-card reveal"><div class="prod-body"><div class="prod-pill" data-en="Industrial Mineral" data-ar="معدن صناعي">Industrial Mineral</div><h3 class="prod-name" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</h3><p class="prod-desc" data-en="Ultra-fine milled silica for oilfield cementing, ceramics, paints, coatings, and specialty chemicals." data-ar="سيليكا مطحونة ناعمة جداً لتسمنت آبار النفط والسيراميك والدهانات والطلاءات والمواد الكيميائية المتخصصة.">Ultra-fine milled silica for oilfield cementing, ceramics, paints, coatings, and specialty chemicals.</p><div class="prod-link" data-en="View Full Specs →" data-ar="عرض المواصفات الكاملة →">View Full Specs →</div></div><div class="prod-card-ghost">02</div></a>
     <a href="products.html#frac-sand" class="prod-card reveal"><div class="prod-body"><div class="prod-pill" data-en="Industrial Mineral" data-ar="معدن صناعي">Industrial Mineral</div><h3 class="prod-name" data-en="Frac Sand" data-ar="رمل الفراك">Frac Sand</h3><p class="prod-desc" data-en="High-strength round-grain proppant for hydraulic fracturing. Tested to API/ISO 13503-2 standards." data-ar="دعامة حبيبات مستديرة عالية المقاومة للكسر الهيدروليكي. مختبرة وفق معايير API/ISO 13503-2.">High-strength round-grain proppant for hydraulic fracturing. Tested to API/ISO 13503-2 standards.</p><div class="prod-link" data-en="View Full Specs →" data-ar="عرض المواصفات الكاملة →">View Full Specs →</div></div><div class="prod-card-ghost">03</div></a>
   </div>
 </section>
+
 <div class="divider"></div>
+
+<!-- INDUSTRIES -->
+<section id="industries">
+  <div class="reveal">
+    <div class="eyebrow" data-en="Industries We Serve" data-ar="الصناعات التي نخدمها">Industries We Serve</div>
+    <h2 class="section-title" data-en="Across Multiple Sectors" data-ar="عبر قطاعات متعددة">Across Multiple Sectors</h2>
 <!-- ABOUT PREVIEW -->
 <section id="about-preview">
   <div class="about-grid">
@@ -75,6 +131,10 @@
       <a href="about.html" class="btn-solid" style="margin-top:28px;" data-en="Learn More About Us" data-ar="اعرف المزيد عنا">Learn More About Us</a>
     </div>
   </div>
+  <div class="industries-grid">
+    <div class="industry-card reveal"><div class="ind-icon">🛢️</div><div class="ind-name" data-en="Oil &amp; Gas" data-ar="النفط والغاز">Oil &amp; Gas</div><div class="ind-desc" data-en="Frac sand and silica flour for hydraulic fracturing, oilfield cementing, and well completion operations tested to API/ISO 13503-2." data-ar="رمل الفراك ودقيق السيليكا لعمليات الكسر الهيدروليكي وتسمنت الآبار واستكمال الآبار مختبرة وفق معايير API/ISO 13503-2.">Frac sand and silica flour for hydraulic fracturing and oilfield cementing.</div><div class="ind-products"><span class="ind-pill" data-en="Frac Sand" data-ar="رمل الفراك">Frac Sand</span><span class="ind-pill" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</span></div></div>
+    <div class="industry-card reveal"><div class="ind-icon">🔬</div><div class="ind-name" data-en="Glass Manufacturing" data-ar="صناعة الزجاج">Glass Manufacturing</div><div class="ind-desc" data-en="Ultra-pure silica sand with tightly controlled SiO₂ content and low Fe₂O₃ levels for flat glass, container glass, and specialty glass production." data-ar="رمل سيليكا عالي النقاء مع محتوى SiO₂ محكوم بدقة ومستويات Fe₂O₃ منخفضة لإنتاج الزجاج المسطح وزجاج الحاويات.">Ultra-pure silica sand for flat glass, container glass, and specialty glass.</div><div class="ind-products"><span class="ind-pill" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</span></div></div>
+    <div class="industry-card reveal"><div class="ind-icon">🏗️</div><div class="ind-name" data-en="Construction" data-ar="البناء والتشييد">Construction</div><div class="ind-desc" data-en="High-purity silica sand and silica flour for concrete, mortar, specialty coatings, adhesives, and construction chemicals requiring precision grading." data-ar="رمل سيليكا عالي النقاء ودقيق السيليكا للخرسانة والملاط والطلاءات المتخصصة والمواصلات ومواد البناء الكيميائية.">High-purity silica for concrete, mortar, coatings, and construction chemicals.</div><div class="ind-products"><span class="ind-pill" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</span><span class="ind-pill" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</span></div></div>
 </section>
 <!-- CLIENTS MARQUEE -->
 <section id="clients-section">
@@ -86,6 +146,8 @@
   <div class="marquee-wrap reveal"><div class="marquee-track" id="mTrack"></div></div>
   <div style="text-align:center;margin-top:34px;" class="reveal"><a href="clients.html" class="btn-solid" data-en="Meet Our Clients" data-ar="تعرف على عملائنا">Meet Our Clients</a></div>
 </section>
+
+<!-- CTA -->
 <div class="divider"></div>
 <!-- TEAM PREVIEW -->
 <section id="team-section">
@@ -114,15 +176,21 @@
 </section>
 <!-- CTA BANNER -->
 <section id="cta-banner">
+  <h2 class="cta-title" data-en="Ready to Partner With Us?" data-ar="هل أنت مستعد للشراكة معنا؟">Ready to Partner With Us?</h2>
+  <p class="cta-sub" data-en="Get in touch to discuss your mineral supply requirements, request samples, or receive a quote." data-ar="تواصل معنا لمناقشة متطلبات إمداد المعادن أو طلب عينات أو الحصول على عرض سعر.">Get in touch to discuss your mineral supply requirements, request samples, or receive a quote.</p>
   <h2 class="cta-title" data-en="Ready to Work With Us?" data-ar="هل أنت مستعد للعمل معنا؟">Ready to Work With Us?</h2>
   <p class="cta-sub" data-en="Get in touch for product specifications, pricing, or to discuss your mineral supply requirements." data-ar="تواصل معنا للحصول على مواصفات المنتج أو الأسعار أو لمناقشة متطلبات إمداد المعادن الخاصة بك.">Get in touch for product specifications, pricing, or to discuss your mineral supply requirements.</p>
   <div class="cta-actions">
+    <a href="contact.html"  class="btn-hero"     data-en="Get a Quote"   data-ar="طلب عرض سعر">Get a Quote</a>
+    <a href="products.html" class="btn-hero-out" data-en="View Products" data-ar="عرض المنتجات">View Products</a>
     <a href="contact.html" class="btn-hero" data-en="Get a Quote" data-ar="طلب عرض سعر">Get a Quote</a>
     <a href="products.html" class="btn-ghost" data-en="View Products" data-ar="عرض المنتجات">View Products</a>
   </div>
 </section>
 
+
 <script src="script.js" defer></script>
 <script src="clients.js" defer></script>
+<script src="index.js" defer></script>
 </body>
 </html>
