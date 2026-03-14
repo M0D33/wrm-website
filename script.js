@@ -41,8 +41,9 @@
   footer.innerHTML =
     '<div class="footer-inner">' +
       '<div class="footer-brand">' +
-        '<div class="footer-logo-name" data-en="White Rocks Mining" data-ar="الصخور البيضاء للتعدين">White Rocks Mining</div>' +
-        '<span class="footer-logo-sub" data-en="الصخور البيضاء للتعدين" data-ar="White Rocks Mining">الصخور البيضاء للتعدين</span>' +
+        '<a href="index.html" class="footer-logo-link">' +
+          '<img src="assets/logo-footer.png" alt="White Rocks Mining" width="160" height="47" class="footer-logo-img"/>' +
+        '</a>' +
         '<p class="footer-tagline"><span data-en="Pioneering " data-ar="رواد ">Pioneering </span><em data-en="mining excellence" data-ar="التميز في التعدين">mining excellence</em><span data-en=" from the heart of Saudi Arabia." data-ar=" من قلب المملكة العربية السعودية."> from the heart of Saudi Arabia.</span></p>' +
         '<a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener" class="footer-li-btn">' +
           '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>' +
@@ -58,6 +59,14 @@
           '<li><a href="team.html" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>' +
           '<li><a href="clients.html" data-en="Clients" data-ar="عملاؤنا">Clients</a></li>' +
           '<li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>' +
+        '</ul>' +
+      '</div>' +
+      '<div>' +
+        '<div class="footer-col-title" data-en="Products" data-ar="المنتجات">Products</div>' +
+        '<ul class="footer-col-links">' +
+          '<li><a href="products.html#silica-sand" data-en="Silica Sand" data-ar="رمل السيليكا">Silica Sand</a></li>' +
+          '<li><a href="products.html#silica-flour" data-en="Silica Flour" data-ar="دقيق السيليكا">Silica Flour</a></li>' +
+          '<li><a href="products.html#frac-sand" data-en="Frac Sand" data-ar="رمل الفراك">Frac Sand</a></li>' +
         '</ul>' +
       '</div>' +
       '<div>' +
